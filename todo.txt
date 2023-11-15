@@ -1,10 +1,14 @@
-
-just globs
-step 1) clean all the data - just blues and can ignore reds for now
-step 2) extract spectrum/sky subtrack from each - load up i nqfits view
-step 3) add spectra together (co-add) - each sub galaxy in image
-    spectra for each gc in file
-    master spectrum
+step 1) clean all the data 
+    - with cube_cut.py 
+    - just blues and can ignore reds for now
+step 2) extract spectrum/sky subtrack from each
+    - load up cut files in qfitsview
+    - highlight object with s 
+    - highlight continuum with C
+    - remember and log the size of each somewhere!
+step 3) add spectra together (co-add) 
+    - each sub galaxy in image
+    - spectra for each gc in file
 step 4) ppxf to get velocities
 step 5) apply baryocentric correction
 step 6) compare to host galaxy velocities
