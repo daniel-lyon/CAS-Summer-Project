@@ -94,13 +94,15 @@ def ppxf_example_kinematics_sauron(high_redshift=False):
     ppxf_dir = path.dirname(path.realpath(util.__file__))
 
     # Read a galaxy spectrum and define the wavelength range
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/outdata/NGC_247/obj1_mean.fits'
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/outdata/NGC_247/obj3_mean_NCS.fits'
     hdu = fits.open(file)
     gal_lin = hdu[0].data
     h1 = hdu[0].header
 
     lamRange1 = h1['CRVAL1'] + np.array([0., h1['CDELT1']*(h1['NAXIS1'] - 1)])
-    fwhm_gal = 4.2  # SAURON has an instrumental resolution FWHM of 4.2A.
+    fwhm_gal = 2.3 # SAURON has an instrumental resolution FWHM of 4.2A.
+    # Keck LRIS has a resolution FWHM of 2.3A. # Copilot got this number - works well
+    # Keck LRIS has a resolution FWHM of 5.46A. # Keck number https://www2.keck.hawaii.edu/observing/kecktelgde/ktelinstupdate.pdf - does not work well
 
     # If high_redshift is True I create a mock high-redshift spectrum by
     # artificially redshifting the local wavelength to redshift z0 ~ 1.23.
@@ -200,8 +202,11 @@ def ppxf_example_kinematics_sauron(high_redshift=False):
     # The updated best-fitting redshift is given by the following
     # lines (using equations 5 of Cappellari 2022, arXiv, C22)
     errors = pp.error*np.sqrt(pp.chi2)  # Assume the fit is good chi2/DOF=1
+    print(errors)
     redshift_fit = (1 + redshift_0)*np.exp(pp.sol[0]/c) - 1  # eq. (5c) C22
+    print(redshift_fit)
     redshift_err = (1 + redshift_fit)*errors[0]/c            # eq. (5d) C22
+    print(redshift_err)
 
     print("Formal errors:")
     print("     dV    dsigma   dh3      dh4")

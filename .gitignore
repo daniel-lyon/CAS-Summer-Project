@@ -162,3 +162,4 @@ cython_debug/
 /data
 ds9
 QFitsView_4.1
+.~lock*
