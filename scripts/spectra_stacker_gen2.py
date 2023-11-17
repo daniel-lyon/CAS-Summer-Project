@@ -14,14 +14,14 @@ start = time.time()
 
 ############################################# User Inputs ##############################################################
 
-file_directory = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/outdata/NGC_247/'
-file_keyword = '*obj2.fits'
+file_directory = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/'
+file_keyword = '*.fits'
 
-mean_out         = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/outdata/NGC_247/obj2_mean.fits'
-mean_out_NCS     = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/outdata/NGC_247/obj2_mean_NCS.fits'
-median_out       = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/outdata/NGC_247/obj2_median.fits'
-stddev_out       = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/outdata/NGC_247/obj2_stddev.fits'
-stddev_out_NCS   = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/outdata/NGC_247/obj2_stddev_NCS.fits'
+mean_out         = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/obj3_mean.fits'
+mean_out_NCS     = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/obj3_mean_NCS.fits'
+median_out       = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/obj3_median.fits'
+stddev_out       = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/obj3_stddev.fits'
+stddev_out_NCS   = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/obj3_stddev_NCS.fits'
 
 weights = 'Equal' # apply a weighting if wanted to the stacking, make sure they are in the same order as things are read in
 

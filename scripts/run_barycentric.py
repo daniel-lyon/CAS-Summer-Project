@@ -12,7 +12,7 @@ from astropy import wcs
 ############################################ USER INPUTS ###############################################################
 
 # file_loc = '/mnt/d/Ubuntu/virgo_megadwarfs/VCC1448/yale_data/ocubes/pointing_b/kb210416_00085_ocubes.fits'
-file_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/data/Glob_Data_Cubes/NGC_243/GCs/kb231024_00053_icubes_cut.fits'
+file_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/kb231024_00052_icubes_cut.fits'
 
 ########################################################################################################################
 
