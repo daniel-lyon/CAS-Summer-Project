@@ -18,7 +18,7 @@ import time
 start = time.time()
 
 ############################################# USER INPUTS ##############################################################
-cube_file_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/Files_4_Daniel/Glob_Data_Cubes/NGC_247/GCs/'
+cube_file_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/Files_4_Daniel/Glob_Data_Cubes/NGC_247/GCs2/'
 cube_file_key = '*kb*'
 
 append_text = '_cut' #what you append to the outfile

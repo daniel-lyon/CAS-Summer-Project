@@ -89,7 +89,7 @@ def ppxf_example_kinematics_sauron(file, fwhm_gal):
     print("     dV    dsigma   dh3      dh4")
     print("".join("%8.2g" % f for f in errors))
     print('Elapsed time in pPXF: %.2f s' % (clock() - t))
-    prec = int(1 - np.floor(np.log10(redshift_err)))  # two digits of uncertainty
+    prec = int(4 - np.floor(np.log10(redshift_err)))  # two digits of uncertainty
     print(f"Best-fitting redshift z = {redshift_fit:#.{prec}f} "
           f"+/- {redshift_err:#.{prec}f}")
     plt.show()
@@ -98,7 +98,7 @@ def ppxf_example_kinematics_sauron(file, fwhm_gal):
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/mean_NCS.fits'
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/obj3/mean_NCS.fits'
     fwhm_gal = 2.3 
     # Keck LRIS has a resolution FWHM of 2.3A. # Copilot got this number - works well
     # Keck LRIS has a resolution FWHM of 5.46A. # Keck number https://www2.keck.hawaii.edu/observing/kecktelgde/ktelinstupdate.pdf - does not work well

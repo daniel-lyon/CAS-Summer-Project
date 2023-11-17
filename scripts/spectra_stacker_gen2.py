@@ -14,19 +14,19 @@ start = time.time()
 
 ############################################# User Inputs ##############################################################
 
-file_directory = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/'
-file_keyword = '*.fits'
+file_directory = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/obj3/'
+file_keyword = '5*.fits'
 
-mean_out         = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/obj3_mean.fits'
-mean_out_NCS     = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/obj3_mean_NCS.fits'
-median_out       = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/obj3_median.fits'
-stddev_out       = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/obj3_stddev.fits'
-stddev_out_NCS   = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/obj3/obj3_stddev_NCS.fits'
+mean_out         = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/obj3/mean.fits'
+mean_out_NCS     = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/obj3/mean_NCS.fits'
+median_out       = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/obj3/median.fits'
+stddev_out       = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/obj3/stddev.fits'
+stddev_out_NCS   = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/obj3/stddev_NCS.fits'
 
 weights = 'Equal' # apply a weighting if wanted to the stacking, make sure they are in the same order as things are read in
 
 #be wary of the sign for below, by convention the barycentric correction is subtracted
-bary_corr = np.array([0, 0, 0])
+bary_corr = np.array([0, 0])
 c = 299792 # km/s
 
 write_out = True
@@ -40,7 +40,7 @@ else:
 
 # Create File list
 file_list = sorted(glob.glob(file_directory + file_keyword))
-print(file_list)
+print(f'list of files: {file_list}')
 
 spectra_data = []
 spectra_header = []
