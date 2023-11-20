@@ -7,26 +7,36 @@
 from barycentric import x_keckhelio
 from astropy.io import fits
 from astropy import wcs
-
-
-############################################ USER INPUTS ###############################################################
-
-# file_loc = '/mnt/d/Ubuntu/virgo_megadwarfs/VCC1448/yale_data/ocubes/pointing_b/kb210416_00085_ocubes.fits'
-file_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/kb231024_00054_icubes_cut.fits'
+import glob
 
 ########################################################################################################################
 
-header = fits.open(file_loc)[0].header
+def barycentric_correction(file_directory, file_keyword):
 
-w = wcs.WCS(header)
+    corrections = []
+    file_list = sorted(glob.glob(file_directory + file_keyword))
 
-ra_deg = w.wcs.crval[0]
+    for file in file_list:
 
-dec_deg = w.wcs.crval[1]
+        header = fits.open(file)[0].header
 
-Julian_Date = header["MJD"] + 2400000.5
+        w = wcs.WCS(header)
 
-bary_corr = x_keckhelio(ra = ra_deg, dec=dec_deg, jd = Julian_Date, obs = 'keck')
+        ra_deg = w.wcs.crval[0]
 
-print("The Barycentric correction is: %.2f km/s" % bary_corr)
-print("Be wary although - you must subtract this number")
+        dec_deg = w.wcs.crval[1]
+
+        Julian_Date = header["MJD"] + 2400000.5
+
+        bary_corr = x_keckhelio(ra = ra_deg, dec=dec_deg, jd = Julian_Date, obs = 'keck')[0]
+
+        corrections.append(-bary_corr)
+
+        print(f"The Barycentric correction is: {bary_corr} km/s")
+
+    return corrections
+
+if __name__ == '__main__':
+    file_directory = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/'
+    bc = barycentric_correction(file_directory, file_keyword='*icubes*')
+    print(bc)

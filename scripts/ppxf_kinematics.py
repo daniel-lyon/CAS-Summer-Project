@@ -15,7 +15,6 @@
 
 from os import path
 from time import perf_counter as clock
-from urllib import request
 
 from astropy.io import fits
 import numpy as np
@@ -25,17 +24,12 @@ from ppxf.ppxf import ppxf
 import ppxf.ppxf_util as util
 import ppxf.sps_util as lib
 
-##############################################################################
-
-def ppxf_example_kinematics_sauron(file, fwhm_gal):
-
-    ppxf_dir = path.dirname(path.realpath(util.__file__))
+def ppxf_kinematics(file, fwhm_gal, degree=4):
 
     # Read a galaxy spectrum and define the wavelength range
     hdu = fits.open(file)
     gal_lin = hdu[0].data
     h1 = hdu[0].header
-
     lamRange1 = h1['CRVAL1'] + np.array([0., h1['CDELT1']*(h1['NAXIS1'] - 1)])
     
     # Use these lines if your spectrum is at low-z (z<0.01
@@ -46,10 +40,7 @@ def ppxf_example_kinematics_sauron(file, fwhm_gal):
     galaxy = galaxy/np.median(galaxy)  # Normalize spectrum to avoid numerical issues
     noise = np.full_like(galaxy, 0.0047)           # Assume constant noise per pixel here
 
-    #------------------- Setup stellar templates -----------------------
-    
-    # sps_name = 'fsps'
-    # sps_name = 'galaxev'
+    # Setup stellar templates
     sps_name = 'emiles'
 
     # The templates span a much larger wavelength range. To save some
@@ -60,6 +51,7 @@ def ppxf_example_kinematics_sauron(file, fwhm_gal):
     # Read SPS models file from my GitHub if not already in the ppxf package dir.
     # The SPS model files are also available here https://github.com/micappe/ppxf_data
     basename = f"spectra_{sps_name}_9.0.npz"
+    ppxf_dir = path.dirname(path.realpath(util.__file__))
     filename = path.join(ppxf_dir, 'sps_models', basename)
 
     sps = lib.sps_lib(filename, velscale, fwhm_gal, wave_range=lam_range_temp)
@@ -77,7 +69,7 @@ def ppxf_example_kinematics_sauron(file, fwhm_gal):
 
     pp = ppxf(sps.templates, galaxy, noise, velscale, start,
               goodpixels=goodPixels, plot=True, moments=4, lam=np.exp(ln_lam1),
-              lam_temp=sps.lam_temp, degree=4)
+              lam_temp=sps.lam_temp, degree=degree)
 
     # The updated best-fitting redshift is given by the following
     # lines (using equations 5 of Cappellari 2022, arXiv, C22)
@@ -89,18 +81,18 @@ def ppxf_example_kinematics_sauron(file, fwhm_gal):
     print("     dV    dsigma   dh3      dh4")
     print("".join("%8.2g" % f for f in errors))
     print('Elapsed time in pPXF: %.2f s' % (clock() - t))
-    prec = int(4 - np.floor(np.log10(redshift_err)))  # two digits of uncertainty
+    prec = int(1 - np.floor(np.log10(redshift_err)))  # two digits of uncertainty
     print(f"Best-fitting redshift z = {redshift_fit:#.{prec}f} "
           f"+/- {redshift_err:#.{prec}f}")
-    plt.show()
+    # plt.show()
+    return pp.sol[0], pp.sol[1], redshift_fit, redshift_err
+
 
 ##############################################################################
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/obj3/mean_NCS.fits'
-    fwhm_gal = 2.3 
-    # Keck LRIS has a resolution FWHM of 2.3A. # Copilot got this number - works well
-    # Keck LRIS has a resolution FWHM of 5.46A. # Keck number https://www2.keck.hawaii.edu/observing/kecktelgde/ktelinstupdate.pdf - does not work well
-    # SAURON has an instrumental resolution FWHM of 4.2A.
-    ppxf_example_kinematics_sauron(file, fwhm_gal)
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs/obj1/mean.fits'
+    fwhm_gal = 5000 / 1800
+    degree = 2 # 14 degrees seems good for GCs. Need to check if different for other objects
+    ppxf_kinematics(file, fwhm_gal, degree)
