@@ -129,7 +129,7 @@ def cut_cube(cube_file_loc, cube_file_key, x_low, x_high, y_low, y_high):
     print('Code Competed Successfully in, %.2f seconds' % runtime)
 
 if __name__ == '__main__':
-    cube_file_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/Files_4_Daniel/Glob_Data_Cubes/NGC_247/GCs2/'
+    cube_file_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/Files_4_Daniel/Glob_Data_Cubes/NGC_247/GCs/'
     cube_file_key = '*kb*'
     x_low = 7 # lowest and highest xvalue of the spaxel to be INCLUDED in the rectangle
     x_high = 26
