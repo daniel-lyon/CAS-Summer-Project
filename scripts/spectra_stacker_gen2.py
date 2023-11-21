@@ -91,7 +91,7 @@ def spectra_stack(file_directory, file_keyword, bary_corr, overwrite=False):
     plt.rcParams.update({'xtick.major.size':10})
     plt.rcParams.update({'ytick.major.size':10})
 
-    fig = plt.figure(11, figsize=(32, 16))
+    fig = plt.figure(11, figsize=(12, 6))
     ax = plt.subplot(111)
 
     for i, bary_data in enumerate(bary_corr_spectra_data):
@@ -102,7 +102,7 @@ def spectra_stack(file_directory, file_keyword, bary_corr, overwrite=False):
 
     plt.show()
 
-    fig = plt.figure(1, figsize=(32, 16))
+    fig = plt.figure(1, figsize=(12, 6))
     ax = plt.subplot(111)
 
     ax.plot(bary_wavelength, median_stacked_spectra, lw=2)

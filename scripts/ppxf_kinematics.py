@@ -57,7 +57,7 @@ def ppxf_kinematics(file, fwhm_gal, degree=4):
     sps = lib.sps_lib(filename, velscale, fwhm_gal, wave_range=lam_range_temp)
 
     # Compute a mask for gas emission lines
-    goodPixels = util.determine_goodpixels(ln_lam1, lam_range_temp, redshift)
+    goodPixels = util.determine_goodpixels(ln_lam1, lam_range_temp, redshift)[:1700]
 
     # Here the actual fit starts. The best fit is plotted on the screen. Gas
     # emission lines are excluded from the pPXF fit using the GOODPIXELS
@@ -70,6 +70,13 @@ def ppxf_kinematics(file, fwhm_gal, degree=4):
     pp = ppxf(sps.templates, galaxy, noise, velscale, start,
               goodpixels=goodPixels, plot=True, moments=4, lam=np.exp(ln_lam1),
               lam_temp=sps.lam_temp, degree=degree)
+    
+    residuals = galaxy[:len(goodPixels)] - pp.bestfit[:len(goodPixels)]
+    signal = np.median((pp.bestfit[:len(goodPixels)] - pp.apoly[:len(goodPixels)]))#/pp1.mpoly)
+    # residuals = 
+    noise = np.std(residuals[residuals<np.percentile(residuals, 90)])
+
+    SN_ratio = signal / noise
 
     # The updated best-fitting redshift is given by the following
     # lines (using equations 5 of Cappellari 2022, arXiv, C22)
@@ -84,6 +91,9 @@ def ppxf_kinematics(file, fwhm_gal, degree=4):
     prec = int(1 - np.floor(np.log10(redshift_err)))  # two digits of uncertainty
     print(f"Best-fitting redshift z = {redshift_fit:#.{prec}f} "
           f"+/- {redshift_err:#.{prec}f}")
+    print(f"Signal-to-noise ratio per pixel: {SN_ratio:.2f}")
+    # print signal and noise
+    print(signal, noise)
     # plt.show()
     return pp.sol[0], pp.sol[1], redshift_fit, redshift_err
 
@@ -92,7 +102,7 @@ def ppxf_kinematics(file, fwhm_gal, degree=4):
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs/obj1/mean.fits'
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs/obj1/mean_NCS.fits'
     fwhm_gal = 5000 / 1800
     degree = 2 # 14 degrees seems good for GCs. Need to check if different for other objects
     ppxf_kinematics(file, fwhm_gal, degree)
