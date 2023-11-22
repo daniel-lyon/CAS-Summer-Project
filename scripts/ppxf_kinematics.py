@@ -73,7 +73,6 @@ def ppxf_kinematics(file, fwhm_gal, degree=4):
     
     residuals = galaxy[:len(goodPixels)] - pp.bestfit[:len(goodPixels)]
     signal = np.median((pp.bestfit[:len(goodPixels)] - pp.apoly[:len(goodPixels)]))#/pp1.mpoly)
-    # residuals = 
     noise = np.std(residuals[residuals<np.percentile(residuals, 90)])
 
     SN_ratio = signal / noise
@@ -92,9 +91,8 @@ def ppxf_kinematics(file, fwhm_gal, degree=4):
     print(f"Best-fitting redshift z = {redshift_fit:#.{prec}f} "
           f"+/- {redshift_err:#.{prec}f}")
     print(f"Signal-to-noise ratio per pixel: {SN_ratio:.2f}")
-    # print signal and noise
     print(signal, noise)
-    # plt.show()
+    plt.show()
     return pp.sol[0], pp.sol[1], redshift_fit, redshift_err
 
 
@@ -102,7 +100,7 @@ def ppxf_kinematics(file, fwhm_gal, degree=4):
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs/obj1/mean_NCS.fits'
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/5P/obj2/mean_NCS.fits'
     fwhm_gal = 5000 / 1800
-    degree = 2 # 14 degrees seems good for GCs. Need to check if different for other objects
+    degree = 8 # legendre polynomial degree
     ppxf_kinematics(file, fwhm_gal, degree)
