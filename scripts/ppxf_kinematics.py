@@ -24,7 +24,7 @@ from ppxf.ppxf import ppxf
 import ppxf.ppxf_util as util
 import ppxf.sps_util as lib
 
-def ppxf_kinematics(file, fwhm_gal, degree=4):
+def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1):
 
     # Read a galaxy spectrum and define the wavelength range
     hdu = fits.open(file)
@@ -57,7 +57,7 @@ def ppxf_kinematics(file, fwhm_gal, degree=4):
     sps = lib.sps_lib(filename, velscale, fwhm_gal, wave_range=lam_range_temp)
 
     # Compute a mask for gas emission lines
-    goodPixels = util.determine_goodpixels(ln_lam1, lam_range_temp, redshift)[:1700]
+    goodPixels = util.determine_goodpixels(ln_lam1, lam_range_temp, redshift)[:wavcut]
 
     # Here the actual fit starts. The best fit is plotted on the screen. Gas
     # emission lines are excluded from the pPXF fit using the GOODPIXELS
@@ -102,5 +102,6 @@ if __name__ == '__main__':
 
     file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/5P/obj2/mean_NCS.fits'
     fwhm_gal = 5000 / 1800
+    wavcut = 1800
     degree = 8 # legendre polynomial degree
-    ppxf_kinematics(file, fwhm_gal, degree)
+    ppxf_kinematics(file, fwhm_gal, degree, wavcut)
