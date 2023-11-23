@@ -65,6 +65,7 @@ def cut_cube(cube_file_loc, cube_file_key, x_low, x_high, y_low, y_high):
     # So now take the best of those
     wl_highest_low = np.max(wl_low)
     wl_lowest_high = np.min(wl_high)
+    print(wl_highest_low, wl_lowest_high)
     print("The beginning and ending wavelength cuts for the cube are %.2f and %.2f respectively" % (wl_highest_low, wl_lowest_high))
 
     #some plotting stuffs

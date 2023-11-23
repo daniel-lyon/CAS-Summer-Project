@@ -68,8 +68,10 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1):
     t = clock()
 
     pp = ppxf(sps.templates, galaxy, noise, velscale, start,
-              goodpixels=goodPixels, plot=True, moments=4, lam=np.exp(ln_lam1),
-              lam_temp=sps.lam_temp, degree=degree)
+              goodpixels=goodPixels, plot=True, 
+              moments=2, degree=degree, mdegree=6,
+              lam=np.exp(ln_lam1),
+              lam_temp=sps.lam_temp, component=np.zeros_like(len(sps.templates)))
     
     residuals = galaxy[:len(goodPixels)] - pp.bestfit[:len(goodPixels)]
     signal = np.median((pp.bestfit[:len(goodPixels)] - pp.apoly[:len(goodPixels)]))#/pp1.mpoly)
@@ -100,8 +102,8 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1):
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/5P/obj2/mean_NCS.fits'
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs/obj1/mean_NCS.fits'
     fwhm_gal = 5000 / 1800
     wavcut = 1800
-    degree = 8 # legendre polynomial degree
+    degree = 6 # legendre polynomial degree
     ppxf_kinematics(file, fwhm_gal, degree, wavcut)
