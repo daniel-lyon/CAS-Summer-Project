@@ -187,7 +187,7 @@ def spectra_stack(file_directory, file_keyword, bary_corr, overwrite=False):
     print('Code Competed Successfully in, %.2f seconds' % runtime)
 
 if __name__ == '__main__':
-    file_directory = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs2/obj3/'
-    file_keyword = '5*.fits'
-    bary_corr = np.array([0, 0])
+    file_directory = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/M31_H12/obj1/'
+    file_keyword = '[0-9]*.fits'
+    bary_corr = np.array([-14.16671117, -14.19433922, -14.22265147, -14.25214012, -14.28545664, -14.3173628])
     spectra_stack(file_directory, file_keyword, bary_corr)
