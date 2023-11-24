@@ -1,6 +1,183 @@
-051: 
-    range - 200-1900
-052: 
-    range - 240-1900
-053: 
-    range - 200-1900
+General Notes: 
+
+Step3 – save plots as "spectra" and "flux" respectively 
+
+Step4 – choose different degrees to get the best fit. --> should minimise errors as much as possible 
+
+Is_associated is: does the RV match the hosts? 
+
+Is_gc is : is the object a small point source that is old with the right magnitude 
+
+GCs have a universal luminosity function of known magnitude and width, so if it's a GC it has a narrow range in brightness. And it should be relatively old, so no emission lines 
+
+ 
+
+NGC 247 – GCs 
+
+Obj1 = bottom middle – 2x8 selection centered on source, 10x10 bad in the middle 
+
+Obj2 = top middle left – 2x3 selection centered on source, 10x10 bad in the middle 
+
+Obj3 = top middle right – 3x3 selection centered on source, 10x10 bad in the middle 
+
+No barycentric corrections as NGC247 is already corrected 
+
+Published redshift = 0.00052 https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract 
+
+ 
+
+NGC 247 – GCs2 
+
+Obj1 = bottom middle – 2x4 selection centered on source, 10x10 bad in the middle 
+
+Obj2 = top middle left – 2x4 selection centered on source, 10x10 bad in the middle 
+
+Obj3 = top middle right – 3x5 selection centered on source, 10x10 bad in the middle 
+
+No barycentric corrections as NGC247 is already corrected 
+
+ 
+
+NGC 247 – 5P 
+
+Just one source – 056 
+
+Obj1 – top middle right – needs to be looked at again 
+
+Obj2 – bottom left – 3x5 centered selection, 10x10 bad in the middle 
+
+No barycentric corrections as NGC247 is already corrected 
+
+ 
+
+NGC 247 – 10P 
+
+Just one source – 055 
+
+Obj1 – middle – needs to be looked at again 
+
+ 
+
+DDO190 
+
+4 source files – 64, 65, 66, 67 
+
+Just one object present 
+
+64 = 2x3 selection area on object with 10x10 bad selection 
+
+65,66,67 = 2x4 selection area on object with 10x10 bad selection 
+
+Obj1 – Barycentric correction [-15.91032514 -15.899407 -15.88998436 -15.88063926] km/s 
+
+Published redshift = 0.0005 https://ui.adsabs.harvard.edu/abs/2013AJ....145..101K/abstract 
+
+ 
+
+F8D1 – Galaxy 
+
+4 source files – 77, 78, 79, 80 
+
+1 object 
+
+77, 78, 79, 80 = 3x5 selection on source, 10x10 bad top right 
+
+Could there maybe be 2 objects? 
+
+Obj1 – Barycentric correction: [-30.38970784 -30.40196416 -30.41061393 -30.41560541] km/s 
+
+Published redshift = -0.000417 https://ui.adsabs.harvard.edu/abs/2017ApJ...843...16K/abstract 
+
+ 
+
+F8D1 – GC 
+
+3 source files – 74, 75, 76 
+
+1 object present (possibly 2?) 
+
+74 = 4x6 selection on source, 10x10 bad in middle 
+
+75,76 = 3x6 selection on source, 10x10 bad in middle 
+
+Obj1 – Barycentric correction: [-28.09391426 -28.08441485 -28.07398391] km/s 
+
+ 
+
+IKN GCC7 
+
+4 source files – 42, 43, 45, 56. Likely 44 had some error like clouds or tiktokers flashing a torch into the telescope 
+
+1 object 
+
+42, 45, 46 = 2x4 selection on source, 10x10 bad selection on upper right 
+
+43 = 1x4 selection on source, 10x10 bad selection on upper right 
+
+Obj1 – barycentric correction: [-15.92508316 -15.90278058 -15.7208608 -15.68809606] km/s 
+
+Published redshift = -0.000467 https://ui.adsabs.harvard.edu/abs/2013AJ....145..101K/abstract 
+
+Needs to be looked at again – can't get a good redshift and error 
+
+ 
+
+M31 B336 
+
+5 source files – 60, 61, 62, 63, 64 
+
+1 object 
+
+60, 61 – 3x6 selection on source, 10x10 bad 
+
+62, 63, 64 – 3x4 selection on source, 10x10 bad 
+
+Barycentric correction: [-22.7132082 -22.74386707 -22.77443132 -22.80596455 -22.8286744 ] km/s 
+
+Published redshift of M31 = -0.001004 https://ui.adsabs.harvard.edu/abs/2013MNRAS.430..971W/abstract 
+
+ 
+
+M31 H12 
+
+6 source files – 62, 63, 64, 65, 66, 67 
+
+1 object 
+
+62, 63, 64, 65, 66, 67 – 3x4 selection on source, 10x10 bad 
+
+Barycentric correction: [-14.16671117 -14.19433922 -14.22265147 -14.25214012 -14.28545664 -14.3173628 ] km/s 
+
+Published redshift of M31 = -0.001004 https://ui.adsabs.harvard.edu/abs/2013MNRAS.430..971W/abstract 
+
+ 
+
+M31 PANDAS 41 
+
+1 source file – 60 
+
+1 object 
+
+60 – 3x10 selection on source, 10x10 bad selection 
+
+Barycentric correction: [-24.02056579] km/s 
+
+Published redshift of M31 = -0.001004 https://ui.adsabs.harvard.edu/abs/2013MNRAS.430..971W/abstract 
+
+ 
+
+Sextans A GC1 
+
+2 source files – 78, 79. Other files 77 and 80 have errors like fog 
+
+1 object 
+
+78, 79– 4x8 selection on source, 10x10 bad selection 
+
+Barycentric correction: [-23.51156546 -23.50249285] km/s 
+
+Published redshift of Sextans A = 0.001081  
+
+https://ui.adsabs.harvard.edu/abs/2014A%26A...566A..44B/abstract 
+
+ 
