@@ -24,7 +24,7 @@ from ppxf.ppxf import ppxf
 import ppxf.ppxf_util as util
 import ppxf.sps_util as lib
 
-def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1):
+def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1, fit='default'):
 
     # Read a galaxy spectrum and define the wavelength range
     hdu = fits.open(file)
@@ -57,7 +57,10 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1):
     sps = lib.sps_lib(filename, velscale, fwhm_gal, wave_range=lam_range_temp)
 
     # Compute a mask for gas emission lines
-    goodPixels = util.determine_goodpixels(ln_lam1, lam_range_temp, redshift)[:wavcut]
+    if fit == 'default':
+        goodPixels = util.determine_goodpixels(ln_lam1, lam_range_temp, redshift)[:wavcut]
+    elif fit == 'all':
+        goodPixels = np.arange(0, len(galaxy)-10, 1)[:wavcut] # all
 
     # Here the actual fit starts. The best fit is plotted on the screen. Gas
     # emission lines are excluded from the pPXF fit using the GOODPIXELS

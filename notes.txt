@@ -24,6 +24,8 @@ No barycentric corrections as NGC247 is already corrected
 
 Published redshift = 0.00052 https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract 
 
+Wavecut: 1700 
+
  
 
 NGC 247 – GCs2 
@@ -36,13 +38,15 @@ Obj3 = top middle right – 3x5 selection centered on source, 10x10 bad in the m
 
 No barycentric corrections as NGC247 is already corrected 
 
+Wavecut obj1: 1880, obj2,3: 1850 
+
  
 
 NGC 247 – 5P 
 
 Just one source – 056 
 
-Obj1 – top middle right – needs to be looked at again 
+Obj1 – top middle right –  
 
 Obj2 – bottom left – 3x5 centered selection, 10x10 bad in the middle 
 
@@ -54,7 +58,9 @@ NGC 247 – 10P
 
 Just one source – 055 
 
-Obj1 – middle – needs to be looked at again 
+Obj1 – middle –  
+
+Wavecut: obj2: 1800 
 
  
 
@@ -71,6 +77,8 @@ Just one object present
 Obj1 – Barycentric correction [-15.91032514 -15.899407 -15.88998436 -15.88063926] km/s 
 
 Published redshift = 0.0005 https://ui.adsabs.harvard.edu/abs/2013AJ....145..101K/abstract 
+
+Wavecut: 1800 
 
  
 
@@ -102,6 +110,8 @@ F8D1 – GC
 
 Obj1 – Barycentric correction: [-28.09391426 -28.08441485 -28.07398391] km/s 
 
+Wavecut: -1 
+
  
 
 IKN GCC7 
@@ -117,8 +127,6 @@ IKN GCC7
 Obj1 – barycentric correction: [-15.92508316 -15.90278058 -15.7208608 -15.68809606] km/s 
 
 Published redshift = -0.000467 https://ui.adsabs.harvard.edu/abs/2013AJ....145..101K/abstract 
-
-Needs to be looked at again – can't get a good redshift and error 
 
  
 
@@ -136,6 +144,8 @@ Barycentric correction: [-22.7132082 -22.74386707 -22.77443132 -22.80596455 -22.
 
 Published redshift of M31 = -0.001004 https://ui.adsabs.harvard.edu/abs/2013MNRAS.430..971W/abstract 
 
+Wavecut: -1 
+
  
 
 M31 H12 
@@ -150,6 +160,8 @@ Barycentric correction: [-14.16671117 -14.19433922 -14.22265147 -14.25214012 -14
 
 Published redshift of M31 = -0.001004 https://ui.adsabs.harvard.edu/abs/2013MNRAS.430..971W/abstract 
 
+wavecut: -1 
+
  
 
 M31 PANDAS 41 
@@ -163,6 +175,8 @@ M31 PANDAS 41
 Barycentric correction: [-24.02056579] km/s 
 
 Published redshift of M31 = -0.001004 https://ui.adsabs.harvard.edu/abs/2013MNRAS.430..971W/abstract 
+
+Wavecut: -1 
 
  
 
@@ -180,4 +194,20 @@ Published redshift of Sextans A = 0.001081
 
 https://ui.adsabs.harvard.edu/abs/2014A%26A...566A..44B/abstract 
 
+Wavecut: -1 
+
  
+
+PMDG-47 
+
+3 source files – 63, 64, 65 
+
+2 objects but we want the faint one! The bright one is likely a star, not a galaxy, so ignore 
+
+Instrument wasn't able to focus correctly so measuring the instrumental resolution carefully will be needed to ensure a velocity dispersion 
+
+This was the night with the nutbag tiktokers shining a torch into the telescope 
+
+63, 64, 65 – 5x7 pixel selection on source, 10x10 bad selection 
+
+Published redshift of Perseus Cluster: https://ui.adsabs.harvard.edu/abs/2018MNRAS.481.1507B/abstract 
