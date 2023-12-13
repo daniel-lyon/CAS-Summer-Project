@@ -20,11 +20,15 @@ from astropy.io import fits
 import numpy as np
 import matplotlib.pyplot as plt
 
-from ppxf.ppxf import ppxf
-import ppxf.ppxf_util as util
-import ppxf.sps_util as lib
+# from ppxf.ppxf import ppxf
+# import ppxf.ppxf_util as util
+# import ppxf.sps_util as lib
 
-def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1, fit='default'):
+from ppxf_backup.ppxf import ppxf
+import ppxf_backup.ppxf_util as util
+import ppxf_backup.sps_util as lib
+
+def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1, fit='default', moments=2, mdegree=6):
 
     # Read a galaxy spectrum and define the wavelength range
     hdu = fits.open(file)
@@ -34,7 +38,7 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1, fit='default'):
     
     # Use these lines if your spectrum is at low-z (z<0.01
     redshift_0 = 0                  # Ignore cosmological redshift for local galaxies
-    redshift = 0.0015               # Initial redshift estimate of the galaxy
+    redshift = -0.0015               # Initial redshift estimate of the galaxy
 
     galaxy, ln_lam1, velscale = util.log_rebin(lamRange1, gal_lin)
     galaxy = galaxy/np.median(galaxy)  # Normalize spectrum to avoid numerical issues
@@ -72,7 +76,7 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1, fit='default'):
 
     pp = ppxf(sps.templates, galaxy, noise, velscale, start,
               goodpixels=goodPixels, plot=True, 
-              moments=2, degree=degree, mdegree=6,
+              moments=moments, degree=degree, mdegree=mdegree,
               lam=np.exp(ln_lam1),
               lam_temp=sps.lam_temp, component=np.zeros_like(len(sps.templates)))
     
@@ -105,8 +109,8 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1, fit='default'):
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/NGC_247/GCs/obj1/mean_NCS.fits'
-    fwhm_gal = 5000 / 1800
-    wavcut = 1800
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/Globs/Sextans_A_GC1/obj1/mean_NCS.fits'
+    fwhm_gal = 4925 / 4000
+    wavcut = -1
     degree = 6 # legendre polynomial degree
-    ppxf_kinematics(file, fwhm_gal, degree, wavcut)
+    ppxf_kinematics(file, fwhm_gal, degree, wavcut, moments=2, mdegree=6, fit='all')

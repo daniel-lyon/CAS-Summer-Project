@@ -163,3 +163,4 @@ cython_debug/
 ds9
 QFitsView_4.1
 .~lock*
+*MILES*

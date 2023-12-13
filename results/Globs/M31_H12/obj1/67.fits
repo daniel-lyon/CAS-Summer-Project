@@ -1,769 +1,0 @@
-SIMPLE  =                    T / file does conform to FITS standard             BITPIX  =                   -64                                                 NAXIS   =                     1                                                 NAXIS1  =                  1918                                                                                                                                                                                                                 EXTEND  =                    T / FITS dataset may contain extensions            BPFILE  = '/home/gannonjs/Programs/idl/idl_apps/KcwiDRP/data/badcol_TUP_2x2.dat'COMMENT   FITS (Flexible Image Transport System) format is defined in 'AstronomyCOMMENT   and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H                                                                                                                                                                 DATE    = '2020-10-21T06:35:06' / file creation date (YYYY-MM-DDThh:mm:ss UT)   COMMENT BEGIN detector-server-specific keywords                                 OFNAME  = 'kb201021_00067.fits' / original file name                            DATEPCLR= '2020-10-21T06:19:12.457' / most recent erase                         DATE-BEG= '2020-10-21T06:19:12.457' / exposure begin                            DATE-END= '2020-10-21T06:34:12.466' / exposure end                              DATEREND= '2020-10-21T06:35:06.105' / readout end                               XPOSURE =                 900. / [s] shutter open duration                      TELAPSE =              900.009 / [s] dark current duration                      TTIME   =                 900. / [s] target exposure time                       NUMOPEN =                    1 / number of shutter opens                        NUMCLOS =                    1 / number of shutter closes                       NSHFUP  =                    0 / number of shuffle ups                          NSHFDN  =                    0 / number of shuffle downs                        CCDCFG  = '2201009 '           / CCD Config: XYSGGAA                            BINNING = '2,2     '           / binning: serial/axis1, parallel/axis2          AMPMODE = 'TUP     '           / name of detector readout mode                  AMPMNUM =                    9 / number of detector readout mode                NVIDINP =                    2 / number of active video inputs                  INTGAIN =                 1.67 / intrinsic gain (e-/DN)                         GAINMUL =                   10 / gain multiplier (1,2,5,10)                     CCDGAIN =                0.167 / gain (e-/DN)                                   NAMPSXY = '2 1     '           / active video inputs along axis1 axis2          COMMENT For the definitions of the IRAF section keywords refer to               COMMENT http://iraf.noao.edu/projects/ccdmosaic/imagedef/imagedef.html          CCDSUM  = '2 2     '           / IRAF ccdsum                                    AMPNAME1= 'H       '           / amp name, readout sequence 0                   AMPID1  =                    2 / amp Id number, readout sequence 0              GAIN1   =                0.161 / gain (e-/DN) for amp 0                         ATSEC1  = '[1:1024,1:2056]'    / trimmed section for amp1                       AMPNAME2= 'G       '           / amp name, readout sequence 1                   AMPID2  =                    3 / amp Id number, readout sequence 1              GAIN2   =                 0.16 / gain (e-/DN) for amp 1                         ATSEC2  = '[1025:2048,1:2056]' / trimmed section for amp2                       COMMENT END detector-server-specific keywords                                   COMMENT ------------------------------------------------------------------------COMMENT keyheader version 96230                                                 COMMENT Location: /kroot/rel/default/bin/keyheader                              COMMENT Configuration: /kroot/rel/default/data/kcwi/keyheader.conf              COMMENT Hostname: kcwitarg                                                      COMMENT Program start time: 2020-10-21T06:35:06.770233Z                         COMMENT ------------------------------------------------------------------------COMMENT                                                                         COMMENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - COMMENT keyheader section [ExposureBegin]                                       COMMENT Snapshot timestamp: 2020-10-21T06:19:12.457000Z                         COMMENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - COMMENT                                                                         COMMENT The following records correspond to the beginning of the exposure,      COMMENT as recorded in the DATE-BEG record.                                     AUTOSHUT=                    1 / automatic shutter operation                    IDLECLOK=                    1 / idle clocking                                  SHUFROWS=                  685 / [ccdrows] number of rows in shuffle            PPRECLR =                    1 / parallel pre-clear (erase)                     CCDMODE =                    0 / CCD speed mode (slow-0/fast-1)                 CCDSPEED=                    0 / CCD readout speed                              INTSPEED=                    0 / CCD integrator speed                           OBJECT  = 'M31_H12 '           / Object name                                    OBSERVER= 'Gannon,Forbes,Romanowsky' / Observer name                            INSTRUME= 'KCWI    '           / Instrument                                     CAMERA  = 'BLUE    '           / Camera (blue,red,fpc)                          IMTYPE  = 'OBJECT  '           / Image type                                     GROUPID = '2020-10-21-67'      / Group ID                                       COMMENT No further records from the beginning of the exposure.                  COMMENT                                                                         COMMENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - COMMENT keyheader section [heartbeats]                                          COMMENT Snapshot timestamp: 2020-10-21T06:19:12.457000Z                         COMMENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - COMMENT                                                                         HEART_01= 'Heartbeat active'   / kbds.UPTIME                                    HEART_02= 'Heartbeat active'   / kbes.UPTIME                                    HEART_03= 'Heartbeat active'   / kbgs.UPTIME                                    HEART_04= 'Heartbeat active'   / kbms.UPTIME                                    HEART_05= 'Heartbeat active'   / kbvs.UPTIME                                    HEART_06= 'Heartbeat active'   / kcas.UPTIME                                    HEART_07= 'Heartbeat active'   / kcwi.GSUPTIME                                  HEART_08= 'Heartbeat active'   / kp1s.UPTIME                                    HEART_09= 'Heartbeat active'   / kp2s.UPTIME                                    HEART_10= 'Heartbeat active'   / kp3s.UPTIME                                    HEART_11= 'Heartbeat active'   / kt1s.UPTIME                                    HEART_12= 'Heartbeat active'   / kt2s.UPTIME                                    COMMENT                                                                         COMMENT ------------------------------------------------------------------------COMMENT End of keyheader output                                                 COMMENT Program start time: 2020-10-21T06:35:06.770233Z                         COMMENT Program end time:   2020-10-21T06:35:06.973083Z                         COMMENT ------------------------------------------------------------------------COMMENT ------------------------------------------------------------------------COMMENT keyheader version 96230                                                 COMMENT Location: /kroot/rel/default/bin/keyheader                              COMMENT Configuration: /kroot/rel/default/data/kcwi/keyheader.conf              COMMENT Hostname: kcwitarg                                                      COMMENT Program start time: 2020-10-21T06:35:07.291212Z                         COMMENT ------------------------------------------------------------------------COMMENT                                                                         COMMENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - COMMENT keyheader section [ExposureEnd]                                         COMMENT Snapshot timestamp: 2020-10-21T06:34:12.466000Z                         COMMENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - COMMENT                                                                         COMMENT The following records correspond to the end of the exposure,            COMMENT as recorded in the DATE-END record.                                     CURRINST= 'KCWI    '           / DCS Instrument                                 TARGNAME= 'M31_H12 '           / DCS Target name                                PONAME  = 'IFU     '           / DCS Point origin name                          RA      = '00:38:03.80'        / DCS RA                                         DEC     = '+37:44:00.7'        / DCS Dec                                        TARGRA  = '00:38:03.80'        / DCS Target RA                                  TARGDEC = '+37:44:00.7'        / DCS Target Dec                                 EQUINOX =              2000.00 / DCS Equinox                                    DRA     =                  0.0 / DCS Diff RA rate (s/s)                         DDEC    =                  0.0 / DCS Diff Dec rate (asec/s)                     RABASE  = '00:38:03.80'        / DCS RA base                                    RAOFF   =                  0.0 / DCS RA offset (asec)                           DECBASE = '+37:44:00.7'        / DCS Dec base                                   DECOFF  =                  0.0 / DCS Dec offset (asec)                          HA      = '+21:34:54.43'       / DCS Hour angle                                 AIRMASS =                 1.24 / DCS Airmass                                    PARANG  =              -109.29 / DCS Parallactic angle astrometric (deg)        PARANTEL=              -109.35 / DCS Parallactic angle telescope (deg)          EL      =                53.66 / DCS Elevation (deg)                            AZ      =                52.42 / DCS Azimuth (deg)                              LST     = '22:12:58.23'        / DCS Local sidereal time                        UT      = '06:34:11.90'        / DCS Universal Time                             DATE-OBS= '2020-10-21'         / DCS UT date of observation                     MJD     =         59143.273749 / DCS Modified Julian day                        TRACKING= 'yes     '           / DCS Servos tracking status                     GUIDING = 'true    '           / DCS Guiding status                             AUTACTIV= 'yes     '           / DCS Guider active                              AUTFWHM =             1.917961 / DCS Guider fwhm (pix)                          AUTXCENT=                  0.9 / DCS Guider x centroid (asec)                   AUTYCENT=                 -1.0 / DCS Guider y centroid (asec)                   TELFOCUS=                0.181 / DCS Telescope focus (mm)                       TELESCOP= 'Keck II '           / DCS Telescope name                             ROTSTST = 'TRACK   '           / DCS Rotator state string                       ROTSEL  = 'none    '           / DCS Selected rotator                           ROTMODE = 'position angle'     / DCS Rotator tracking mode                      ROTDEST =                  0.0 / DCS Rotator user destination (deg)             ROTPDEST=              -304.31 / DCS Rotator physical destination (deg)         ROTPOSN =                 0.01 / DCS Rotator user position (deg)                ROTPPOSN=              -304.31 / DCS Rotator physical position (deg)            ROTBASE =                -0.15 / DCS Rotator base (deg)                         ROTREFAN=                  0.0 / DCS Rotator reference angle (deg)              ROTDETS1= '06:34:11.68'        / DCS Rotator time stamp 1                       ROTDETS2= '06:34:11.68'        / DCS Rotator time stamp 2                       SECSTST = 'INPOS   '           / DCS Secondary status string                    SECFOCUS=               -0.591 / DCS Secondary focus (mm)                       SECTHETX=                -96.3 / DCS Secondary theta x (asec)                   SECTHETY=               -320.3 / DCS Secondary theta y (asec)                   TERTSTST= 'LOCKED  '           / DCS Tertiary status string                     TERTDEST= 'rnas    '           / DCS Tertiary user destination                  TERTPOSN= 'rnas    '           / DCS Tertiary user position                     TUBETEMP=                 3.88 / DCS Tube temperature (deg C)                   DOMEPOSN=                52.44 / DCS Dome user position                         DOMESTST= 'TRACK   '           / DCS Dome status string                         FLIMAGIN= 'off     '           / DCS Dome lamp imaging mode                     FLSPECTR= 'off     '           / DCS Dome lamp spectra mode                     COMMENT The following records encapsulate the instrument state.                 COMMENT The state of the Global Server (KCWI)                                   BCWAVE  =         5069.9912109 / Blue Central Wavelength (Ang)                  BPWAVE  =         5069.9926758 / Blue Peak Wavelength (Ang)                     BALPHA  =           49.3362732 / Blue grating incidence angle (deg)             BBETA   =           41.4458923 / Blue grating diffraction angle (deg)           STATEID = '5f8f8f02ce9e246584043654' / State ID                                 STATENAM= 'BH3_Medium-5070'    / User defined state name                        PROGNAME= 'W017    '           / TAC program name                               COMMENT The state of the Blue Grating Exchanger (KBES)                          BGRATNAM= 'BH3     '           / Blue Grating name                              BGRATNUM=                    1 / Blue Grating number (0-5)                      BGRANGLE=           242.166275 / Blue Grating Angle (deg)                       BGROTNAM= ' 242.166'           / Blue Grating rotator position name             BGROTNUM=                    2 / Blue Grating rotator position num (0-2)        BGRENC  =               377275 / Blue Grating rotator encoder position (counts) BGPPOS  =                    2 / Blue Grating pusher position num (0-2)         BGPNAME = 'Mount   '           / Blue Grating pusher position name              BGTPOS  =                    1 / Blue Grating transfer position num (0-1)       BGTNAME = 'Beam    '           / Blue Grating transfer position name            BFILTNUM=                    3 / Blue Filter number (0-5)                       BFILTNAM= 'KBlue   '           / Blue Filter name                               BFPPOS  =                    2 / Blue Filter pusher position num (0-2)          BFPNAME = 'Mount   '           / Blue Filter pusher position name               BFTPOS  =                    1 / Blue Filter transfer position num (0-1)        BFTNAME = 'Beam    '           / Blue Filter transfer position name             COMMENT The state of the Blue Mechanism Server (KBMS)                           BARTANG =           90.6121674 / Blue Articulation Stage Angle (deg)            BARTENC =               403559 / Blue Articulation Stage Encoder Value          BNASNAM = 'Open    '           / Blue NandS Mask Stage Position Name            BNASENC =                89998 / Blue NandS Mask Stage Encoder Value            BFOCMM  =               -1.827 / Blue Focus Stage Position in mm                BFOCENC =                -1827 / Blue Focus Stage Encoder Value                 BFOCHM  =                    1 / Blue Focus Stage Homed? 0-no, 1-yes            COMMENT The state of the Calibration Unit (KCAS)                                CALTYPE = 'object  '           / Type of image according to CAL server          HATPOS  = 'Open    '           / Instrument hatch position name                 HATNUM  =                    1 / Instrument hatch position number (0,1)         IFUENC  =               134407 / IFU encoder position (counts)                  IFUNUM  =                    2 / IFU position number (0-5)                      IFUNAM  = 'Medium  '           / IFU position name                              CALXENC =                76984 / CAL X encoder position (counts)                CALXPOS =                    0 / CAL X axis position number (0-13)              CALXNAM = 'Dark    '           / CAL Y axis position number (0-13)              CALYENC =               119916 / CAL Y encoder position (counts)                CALYPOS =                    0 / CAL Y axis position number (0-13)              CALYNAM = 'Dark    '           / CAL Y axis position number (0-13)              CALPENC =                12498 / CAL Pupil encoder position (counts)            CALPPOS =                    0 / CAL Pupil Lens position number (0-2)           CALPNAM = 'Sky     '           / CAL Pupil Lens position name                   CALMENC =                13437 / CAL Mirror encoder position (counts)           CALMPOS =                    0 / CAL Mirror position number (0-2)               CALMNAM = 'Sky     '           / CAL Mirror position name                       CALHPOS =                    0 / CAL Hex Pupil position number (0-3)            CALHNAM = 'Home    '           / CAL Hex Pupil position name                    CALHANG =          -16.2744694 / CAL Hex Pupil angle (deg)                      CALHSPD =                  0.0 / CAL Hex Pupil rotation speed (deg/s)           CALHSTAT= 'OK      '           / CAL Hex Pupil status (Moving, OK)              CALLENC =                    5 / CAL Linear Polarizer encoder position (counts) CALLPOS =                    0 / CAL Linear Polarizer position number (0-4)     CALLNAM = 'Home    '           / CAL Linear Polarizer position name             CALLANG =             0.026391 / CAL Linear Polarizer angle (deg)               LMP0NAM = 'FeAr    '           / CAL Lamp 0 name                                LMP0STAT=                    0 / CAL Lamp 0 status (0-off, 1-on)                LMP0SHST=                    0 / CAL Lamp 0 shutter (0-closed, 1-open)          LMP0ONT =                  264 / CAL Lamp 0 ON duration (s)                     LMP1NAM = 'ThAr    '           / CAL Lamp 1 name                                LMP1STAT=                    0 / CAL Lamp 1 status (0-off, 1-on)                LMP1SHST=                    0 / CAL Lamp 1 shutter (0-closed, 1-open)          LMP1ONT =                  271 / CAL Lamp 1 ON duration (s)                     LMP2NAM = 'Aux     '           / CAL Lamp 2 name                                LMP2STAT=                    0 / CAL Lamp 2 status (0-off, 1-on)                LMP2SHST=                    0 / CAL Lamp 2 shutter (0-closed, 1-open)          LMP2ONT =                    0 / CAL Lamp 2 ON duration (s)                     LMP3NAM = 'Continuum A'        / CAL Lamp 3 name                                LMP3STAT=                    0 / CAL Lamp 3 status (0-off, 1-on)                LMP3ONT =                  379 / CAL Lamp 3 ON duration (s)                     COMMENT The state of the Rotator Server (KROS)                                  ROTMODS = 'track   '           / ROS Rotation Mode(s)                           SKYPA   =                  0.0 / ROS Sky PA                                     TRCKMODE=                    1 / ROS Tracking mode                              COMMENT The state of the Blue Dewar Pressure controllers (KBGS, KBVS)           BGPRESS =               0.0003 / Blue Pressure Gauge Pressure (Torr)            BVPRESS = 7.70000000000000E-06 / Blue Vac-Ion Pressure (Torr)                   BVHVON  =                    1 / Blue Vac-Ion HV on? 0-no, 1-yes                BVCURR  =              0.00032 / Blue Vac-Ion Current (Amps)                    BVVOLT  =                 5000 / Blue Vac-Ion Voltage (Volts)                   COMMENT The state of Bank A of the Temperature Controller (KT1S)                BCCDTMP =               162.99 / Blue CCD Temperature (K)                       BHTR1ST = 'OK      '           / Blue Heater 1 Status                           BHTR2ST = 'OK      '           / Blue Heater 2 Status                           BCNTRL1 =                    1 / Blue Heater 1 Control Mode                     BCNTRL2 =                    1 / Blue Heater 2 Control Mode                     BINPUT1 =                    0 / Blue Heater 1 Input Sensor                     BINPUT2 =                    1 / Blue Heater 2 Input Sensor                     BTRGTMP1=               273.31 / Blue Heater 2 setpoint (K)                     BTRGTMP2=                163.0 / Blue Heater 2 setpoint (K)                     BRESIST1=                    1 / Blue Heater 1 Resistance (1-25, 2-50 Ohms)     BRESIST2=                    1 / Blue Heater 2 Resistance (1-25, 2-50 Ohms)     BPUPEN1 =                    0 / Blue Heater 1 Power-up Enabled?                BPUPEN2 =                    1 / Blue Heater 2 Power-up Enabled?                BMXCURM1=                    4 / Blue Heater 1 Max Current Mode                 BMXCURM2=                    1 / Blue Heater 2 Max Current Mode                 BRANGE1 =                    0 / Blue Heater 1 Power Range (0-Off, 1-Lo, 2-Md)  BRANGE2 =                    2 / Blue Heater 2 Power Range (0-Off, 1-Lo, 2-Md)  BTMPHTP1=                  0.0 / Blue Heater 1 Output (%)                       BTMPHTP2=           23.1000004 / Blue Heater 2 Output (%)                       TMPLOCA1= 'Blue CCD A'         / Temperature Bank A, Sensor 1 name              TMPA1   =               162.99 / Temperature Bank A, Sensor 1 value             TMPLOCA2= 'Blue Cam B'         / Temperature Bank A, Sensor 2 name              TMPA2   =              273.116 / Temperature Bank A, Sensor 2 value             TMPLOCA3= 'Blue Shutter'       / Temperature Bank A, Sensor 3 name              TMPA3   =              284.221 / Temperature Bank A, Sensor 3 value             TMPLOCA4= 'Blue InvPl'         / Temperature Bank A, Sensor 4 name              TMPA4   =              162.141 / Temperature Bank A, Sensor 4 value             TMPLOCA5= 'Blue Strap Bot'     / Temperature Bank A, Sensor 5 name              TMPA5   =              139.336 / Temperature Bank A, Sensor 5 value             TMPLOCA6= 'Blue Strap Top'     / Temperature Bank A, Sensor 6 name              TMPA6   =              108.212 / Temperature Bank A, Sensor 6 value             TMPLOCA7= 'Blue Case'          / Temperature Bank A, Sensor 7 name              TMPA7   =              278.504 / Temperature Bank A, Sensor 7 value             TMPLOCA8= 'Bench Bot'          / Temperature Bank A, Sensor 8 name              TMPA8   =               276.11 / Temperature Bank A, Sensor 8 value             COMMENT The state of Bank B of the Temperature Controller (KT2S)                RHTR1ST = 'OK      '           / Red Heater 1 Status                            RHTR2ST = 'OK      '           / Red Heater 2 Status                            RCNTRL1 =                    1 / Red Heater 1 Control Mode                      RCNTRL2 =                    1 / Red Heater 2 Control Mode                      RINPUT1 =                    1 / Red Heater 1 Input Sensor                      RINPUT2 =                    2 / Red Heater 2 Input Sensor                      RTRGTMP1=               226.85 / Red Heater 2 setpoint (K)                      RTRGTMP2=               226.85 / Red Heater 2 setpoint (K)                      RRESIST1=                    1 / Red Heater 1 Resistance (1-25, 2-50 Ohms)      RRESIST2=                    1 / Red Heater 2 Resistance (1-25, 2-50 Ohms)      RPUPEN1 =                    0 / Red Heater 1 Power-up Enabled?                 RPUPEN2 =                    0 / Red Heater 2 Power-up Enabled?                 RMXCURM1=                    4 / Red Heater 1 Max Current Mode                  RMXCURM2=                    3 / Red Heater 2 Max Current Mode                  RRANGE1 =                    0 / Red Heater 1 Power Range (0-Off, 1-Lo, 2-Md)   RRANGE2 =                    0 / Red Heater 2 Power Range (0-Off, 1-Lo, 2-Md)   RTMPHTP1=                  0.0 / Red Heater 1 Output (%)                        RTMPHTP2=                  0.0 / Red Heater 2 Output (%)                        TMPLOCB1= 'Bench Top A'        / Temperature Bank B, Sensor 1 name              TMPB1   =              275.518 / Temperature Bank B, Sensor 1 value             TMPLOCB2= 'IFU Base B'         / Temperature Bank B, Sensor 2 name              TMPB2   =              278.118 / Temperature Bank B, Sensor 2 value             TMPLOCB3= 'Cab rear'           / Temperature Bank B, Sensor 3 name              TMPB3   =              279.766 / Temperature Bank B, Sensor 3 value             TMPLOCB4= 'KMG Weld'           / Temperature Bank B, Sensor 4 name              TMPB4   =               275.15 / Temperature Bank B, Sensor 4 value             TMPLOCB5= 'Cal Base'           / Temperature Bank B, Sensor 5 name              TMPB5   =              278.461 / Temperature Bank B, Sensor 5 value             TMPLOCB6= 'Collim  '           / Temperature Bank B, Sensor 6 name              TMPB6   =              275.704 / Temperature Bank B, Sensor 6 value             TMPLOCB7= 'Cab int '           / Temperature Bank B, Sensor 7 name              TMPB7   =              292.361 / Temperature Bank B, Sensor 7 value             TMPLOCB8= 'Blue Fill'          / Temperature Bank B, Sensor 8 name              TMPB8   =              257.066 / Temperature Bank B, Sensor 8 value             COMMENT The state of Bank A of the Power Controller (KP1S)                      PWNAMEA1= 'FPCam   '           / Power Bank A, Port 1 name                      PWSTATA1=                    1 / Power Bank A, Port 1 on? 0-no, 1-yes           PWNAMEA2= 'Magiq   '           / Power Bank A, Port 2 name                      PWSTATA2=                    1 / Power Bank A, Port 2 on? 0-no, 1-yes           PWNAMEA3= 'Glycol  '           / Power Bank A, Port 3 name                      PWSTATA3=                    1 / Power Bank A, Port 3 on? 0-no, 1-yes           PWNAMEA4= 'Lkshore1'           / Power Bank A, Port 4 name                      PWSTATA4=                    1 / Power Bank A, Port 4 on? 0-no, 1-yes           PWNAMEA5= 'BPGauge '           / Power Bank A, Port 5 name                      PWSTATA5=                    1 / Power Bank A, Port 5 on? 0-no, 1-yes           PWNAMEA6= 'BVacIon '           / Power Bank A, Port 6 name                      PWSTATA6=                    1 / Power Bank A, Port 6 on? 0-no, 1-yes           PWNAMEA7= 'Hatch   '           / Power Bank A, Port 7 name                      PWSTATA7=                    1 / Power Bank A, Port 7 on? 0-no, 1-yes           PWNAMEA8= 'BShutter'           / Power Bank A, Port 8 name                      PWSTATA8=                    1 / Power Bank A, Port 8 on? 0-no, 1-yes           COMMENT The state of Bank B of the Power Controller (KP2S)                      PWNAMEB1= 'HeatExchanger'      / Power Bank B, Port 1 name                      PWSTATB1=                    1 / Power Bank B, Port 1 on? 0-no, 1-yes           PWNAMEB2= 'BDet    '           / Power Bank B, Port 2 name                      PWSTATB2=                    1 / Power Bank B, Port 2 on? 0-no, 1-yes           PWNAMEB3= 'AutoFill'           / Power Bank B, Port 3 name                      PWSTATB3=                    1 / Power Bank B, Port 3 on? 0-no, 1-yes           PWNAMEB4= 'Lkshore2'           / Power Bank B, Port 4 name                      PWSTATB4=                    1 / Power Bank B, Port 4 on? 0-no, 1-yes           PWNAMEB5= 'Lantrnx1'           / Power Bank B, Port 5 name                      PWSTATB5=                    1 / Power Bank B, Port 5 on? 0-no, 1-yes           PWNAMEB6= 'Unused  '           / Power Bank B, Port 6 name                      PWSTATB6=                    0 / Power Bank B, Port 6 on? 0-no, 1-yes           PWNAMEB7= 'PB2:BEX;BMS'        / Power Bank B, Port 7 name                      PWSTATB7=                    1 / Power Bank B, Port 7 on? 0-no, 1-yes           PWNAMEB8= 'Unused  '           / Power Bank B, Port 8 name                      PWSTATB8=                    0 / Power Bank B, Port 8 on? 0-no, 1-yes           COMMENT The state of Bank C of the Power Controller (KP3S)                      PWNAMEC1= 'CalLamps'           / Power Bank C, Port 1 name                      PWSTATC1=                    1 / Power Bank C, Port 1 on? 0-no, 1-yes           PWNAMEC2= 'Unused  '           / Power Bank C, Port 2 name                      PWSTATC2=                    0 / Power Bank C, Port 2 on? 0-no, 1-yes           PWNAMEC3= 'Unused  '           / Power Bank C, Port 3 name                      PWSTATC3=                    0 / Power Bank C, Port 3 on? 0-no, 1-yes           PWNAMEC4= 'Unused  '           / Power Bank C, Port 4 name                      PWSTATC4=                    0 / Power Bank C, Port 4 on? 0-no, 1-yes           PWNAMEC5= 'Unused  '           / Power Bank C, Port 5 name                      PWSTATC5=                    0 / Power Bank C, Port 5 on? 0-no, 1-yes           PWNAMEC6= 'Unused  '           / Power Bank C, Port 6 name                      PWSTATC6=                    0 / Power Bank C, Port 6 on? 0-no, 1-yes           PWNAMEC7= 'Unused  '           / Power Bank C, Port 7 name                      PWSTATC7=                    0 / Power Bank C, Port 7 on? 0-no, 1-yes           PWNAMEC8= 'PB1:CAL;ROT'        / Power Bank C, Port 8 name                      PWSTATC8=                    1 / Power Bank C, Port 8 on? 0-no, 1-yes           COMMENT No further records from the end of the exposure.                        COMMENT                                                                         COMMENT ------------------------------------------------------------------------COMMENT End of keyheader output                                                 COMMENT Program start time: 2020-10-21T06:35:07.291212Z                         COMMENT Program end time:   2020-10-21T06:35:08.819172Z                         COMMENT ------------------------------------------------------------------------COMMENT ------------------------------------------------------------------------COMMENT keyheader version 96230                                                 COMMENT Location: /kroot/rel/default/bin/keyheader                              COMMENT Configuration: /kroot/rel/default/data/kcwi/keyheader.conf              COMMENT Hostname: kcwitarg                                                      COMMENT Program start time: 2020-10-21T06:35:09.177317Z                         COMMENT ------------------------------------------------------------------------COMMENT                                                                         COMMENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - COMMENT keyheader section [ReadoutEnd]                                          COMMENT Snapshot timestamp: 2020-10-21T06:35:06.105000Z                         COMMENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - COMMENT                                                                         COMMENT The following records correspond to the end of the readout,             COMMENT as recorded in the DATEREND record.                                     OUTDIR  = '/s/sdata1400/kcwi3/2020oct21' / directory path                       OUTFILE = 'kb201021_'          / filename prefix                                FRAMENO =                   67 / frame number                                   COMMENT No further records from the end of the readout.                         COMMENT                                                                         COMMENT ------------------------------------------------------------------------COMMENT End of keyheader output                                                 COMMENT Program start time: 2020-10-21T06:35:09.177317Z                         COMMENT Program end time:   2020-10-21T06:35:09.207171Z                         COMMENT ------------------------------------------------------------------------CHECKSUM= '3SkdAQhd5QhdAQhd'   / HDU checksum updated 2020-10-21T06:35:09       DATASUM = '1044491917'         / data unit checksum updated 2020-10-21T06:35:09 HISTORY   KCWI DERP Version: v1.2.0-1-g47fadfe Fri Feb 14 15:52:10 2020 -0800   HISTORY   KCWI_STAGE1 Thu Oct 22 22:27:54 2020                                  NSATPIX =                   57 / Number of saturated pixels                     BIASRN1 =              2.84872 / amp1 RN in e- from bias                        BIASRN2 =              2.83493 / amp2 RN in e- from bias                        BIASSUB =                    T / bias subtracted?                               LONGSTRN= 'OGIP 1.0'           / The OGIP long string convention may be used.   COMMENT  This FITS file may contain long string keyword values that are         COMMENT  continued over multiple keywords.  This convention uses the  '&'       COMMENT  character at the end of a string which is then continued               COMMENT  on subsequent keywords whose name = 'CONTINUE'.                        MBFILE  = '/mnt/d/Ubuntu/Perseus_paper/kderp_pipieline/Oct2020/201020/redux/kb&'CONTINUE  '201021_00011_mbias.fits'                                             OSCNRN1 =        2.76158539351 / amp1 RN in e- from oscan                       OSCNRN2 =        2.88622901700 / amp2 RN in e- from oscan                       OSCANSUB=                    T / overscan subtracted?                           IMGTRIM =                    T / image trimmed?                                 GAINCOR =                    T / gain corrected?                                BUNIT   = 'FLAM16  '           / brightness units (Flam*10^16)                  BPCLEAN =                    T / cleaned bad pixels?                            NBPCLEAN=                 1182 / number of bad pixels cleaned                   CRCLEAN =                    T / cleaned cosmic rays?                           NCRCLEAN=                 3836 / number of cosmic rays cleaned                  CRKERN  = '3x3     '           / cosmic ray kernel                              HISTORY   KCWI_LA_COSMIC Thu Oct 22 22:28:25 2020                               KDRPDATE= '2020-10-22T12:06:27' / KCWI DRP image write date                     HISTORY   KCWI_STAGE2DARK Thu Oct 22 22:39:01 2020                              DARKSUB =                    F / dark subtracted?                               SCATCOR =                    T / scattered light subtracted?                    HISTORY   KCWI_STAGE4FLAT Thu Oct 22 22:44:23 2020                              FLATCOR =                    T / flat corrected?                                MFFILE  = '/mnt/d/Ubuntu/Perseus_paper/kderp_pipieline/Oct2020/201020/redux/kb&'CONTINUE  '201021_00033_mflat.fits'                                             WAVMAPF = '/mnt/d/Ubuntu/Perseus_paper/kderp_pipieline/Oct2020/201020/redux/kb&'CONTINUE  '201021_00030_wavemap.fits'                                           SLIMAPF = '/mnt/d/Ubuntu/Perseus_paper/kderp_pipieline/Oct2020/201020/redux/kb&'CONTINUE  '201021_00030_slicemap.fits'                                          POSMAPF = '/mnt/d/Ubuntu/Perseus_paper/kderp_pipieline/Oct2020/201020/redux/kb&'CONTINUE  '201021_00030_posmap.fits'                                            HISTORY   KCWI_STAGE6CUBE Thu Oct 22 22:57:08 2020                              BARSEP  =              13.7695 / separation of bars (binned pix)                BAR0    =                    7 / first bar pixel position                       WAVALL0 =              4767.44 / Low inclusive wavelength                       WAVALL1 =              5351.79 / High inclusive wavelength                      WAVGOOD0=              4819.20 / Low good wavelength                            WAVGOOD1=              5299.89 / High good wavelength                           WAVMID  =              5059.58 / middle wavelength                              AVWVSIG =            0.0270963 / Avg. bar wave sigma (Ang)                      SDWVSIG =           0.00199246 / Stdev. bar wave sigma (Ang)                    GEOXGSG =            0.0304275 / Global geometry X sigma (pix)                  GEOYGSG =            0.0203604 / Global geometry Y sigma (pix)                  GEOXSG0 =                0.024 / Avg. geometry X sigma (pix) slice 0            GEOYSG0 =                0.017 / Avg. geometry Y sigma (pix) slice 0            GEOXSG1 =                0.028 / Avg. geometry X sigma (pix) slice 1            GEOYSG1 =                0.028 / Avg. geometry Y sigma (pix) slice 1            GEOXSG2 =                0.029 / Avg. geometry X sigma (pix) slice 2            GEOYSG2 =                0.015 / Avg. geometry Y sigma (pix) slice 2            GEOXSG3 =                0.032 / Avg. geometry X sigma (pix) slice 3            GEOYSG3 =                0.016 / Avg. geometry Y sigma (pix) slice 3            GEOXSG4 =                0.031 / Avg. geometry X sigma (pix) slice 4            GEOYSG4 =                0.019 / Avg. geometry Y sigma (pix) slice 4            GEOXSG5 =                0.032 / Avg. geometry X sigma (pix) slice 5            GEOYSG5 =                0.015 / Avg. geometry Y sigma (pix) slice 5            GEOXSG6 =                0.033 / Avg. geometry X sigma (pix) slice 6            GEOYSG6 =                0.019 / Avg. geometry Y sigma (pix) slice 6            GEOXSG7 =                0.033 / Avg. geometry X sigma (pix) slice 7            GEOYSG7 =                0.028 / Avg. geometry Y sigma (pix) slice 7            GEOXSG8 =                0.032 / Avg. geometry X sigma (pix) slice 8            GEOYSG8 =                0.018 / Avg. geometry Y sigma (pix) slice 8            GEOXSG9 =                0.033 / Avg. geometry X sigma (pix) slice 9            GEOYSG9 =                0.030 / Avg. geometry Y sigma (pix) slice 9            GEOXSG10=                0.031 / Avg. geometry X sigma (pix) slice 10           GEOYSG10=                0.026 / Avg. geometry Y sigma (pix) slice 10           GEOXSG11=                0.030 / Avg. geometry X sigma (pix) slice 11           GEOYSG11=                0.014 / Avg. geometry Y sigma (pix) slice 11           GEOXSG12=                0.030 / Avg. geometry X sigma (pix) slice 12           GEOYSG12=                0.012 / Avg. geometry Y sigma (pix) slice 12           GEOXSG13=                0.031 / Avg. geometry X sigma (pix) slice 13           GEOYSG13=                0.015 / Avg. geometry Y sigma (pix) slice 13           GEOXSG14=                0.031 / Avg. geometry X sigma (pix) slice 14           GEOYSG14=                0.020 / Avg. geometry Y sigma (pix) slice 14           GEOXSG15=                0.033 / Avg. geometry X sigma (pix) slice 15           GEOYSG15=                0.015 / Avg. geometry Y sigma (pix) slice 15           GEOXSG16=                0.032 / Avg. geometry X sigma (pix) slice 16           GEOYSG16=                0.014 / Avg. geometry Y sigma (pix) slice 16           GEOXSG17=                0.034 / Avg. geometry X sigma (pix) slice 17           GEOYSG17=                0.018 / Avg. geometry Y sigma (pix) slice 17           GEOXSG18=                0.031 / Avg. geometry X sigma (pix) slice 18           GEOYSG18=                0.024 / Avg. geometry Y sigma (pix) slice 18           GEOXSG19=                0.030 / Avg. geometry X sigma (pix) slice 19           GEOYSG19=                0.023 / Avg. geometry Y sigma (pix) slice 19           GEOXSG20=                0.030 / Avg. geometry X sigma (pix) slice 20           GEOYSG20=                0.017 / Avg. geometry Y sigma (pix) slice 20           GEOXSG21=                0.031 / Avg. geometry X sigma (pix) slice 21           GEOYSG21=                0.028 / Avg. geometry Y sigma (pix) slice 21           GEOXSG22=                0.025 / Avg. geometry X sigma (pix) slice 22           GEOYSG22=                0.025 / Avg. geometry Y sigma (pix) slice 22           GEOXSG23=                0.026 / Avg. geometry X sigma (pix) slice 23           GEOYSG23=                0.034 / Avg. geometry Y sigma (pix) slice 23           PXSCL   =    8.09600000000E-05 / Pixel scale along slice                        SLSCL   =    0.000188590000000 / Pixel scale purpendicular to slices            CBARSFL = '/mnt/d/Ubuntu/Perseus_paper/kderp_pipieline/Oct2020/201020/redux/kb&'CONTINUE  '201021_00030_int.fits'                                               CBARSNO =                   30 / Continuum bars image number                    ARCFL   = '/mnt/d/Ubuntu/Perseus_paper/kderp_pipieline/Oct2020/201020/redux/kb&'CONTINUE  '201021_00032_int.fits'                                               ARCNO   =                   32 / Arc image number                               GEOMFL  = '/mnt/d/Ubuntu/Perseus_paper/kderp_pipieline/Oct2020/201020/redux/kb&'CONTINUE  '201021_00030_geom.fits'                                              IFUPA   =            0.0100000 / IFU position angle (degrees)                   IFUROFF =              0.00000 / IFU-SKYPA offset (degrees)                     WCSDIM  =                    3 / number of dimensions in WCS                    WCSNAME = 'KCWI    '           /                                                RADESYS = 'FK5     '           /                                                CTYPE1  = 'AWAV    '                                                                                                                                                                                                                            CUNIT1  = 'Angstrom'                                                                                                                                                                                                                            CNAME1  = 'KCWI RA '           / RA name                                        CNAME2  = 'KCWI DEC'           / DEC name                                       CNAME3  = 'KCWI Wavelength'    / Wavelength name                                CRVAL1  =               4819.75                                                                                                                                                                                                                 CRPIX1  =                     1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 LONPOLE =              180.000 / Native longitude of Celestial pole             LATPOLE =              0.00000 / Celestial latitude of native pole              HISTORY   KCWI_SOLVE_SLICES Thu Oct 22 22:39:39 2020                            HISTORY   KCWI_APPLY_GEOM Thu Oct 22 22:57:09 2020                              HISTORY   KCWI_STAGE7DAR Thu Oct 22 22:59:38 2020                               DARCOR  =                    T / DAR corrected?                                 DARANG  =        109.300000916 / DAR projection angle (deg)                     DARPADX =                    5 / DAR X padding (pix)                            DARPADY =                   13 / DAR Y padding (pix)                            DAREFWL =              5059.58 / DAR reference wl (Ang)                         HISTORY   KCWI_CORRECT_EXTIN Thu Oct 22 23:06:27 2020                           EXTCOR  =                    T / extinction corrected?                          AVEXCOR =              1.15056 / average extin. correction (flux ratio)         HISTORY   KCWI_STAGE8STD Thu Oct 22 23:06:27 2020                               STDCOR  =                    T / std corrected?                                 MSFILE  = '/mnt/d/Ubuntu/Perseus_paper/kderp_pipieline/Oct2020/201020/redux/kb&'CONTINUE  '201021_00059_invsens.fits'                                           MSIMNO  =                   59 / master std image number                        CDELT1  =                  0.25                                                 END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @
-–‘3@£Ö@ÞÏ:¶¸@`Smp¤@
-ÞO}34@
-7m¾áH@Ü¨/5Â@“>¿aG®@
-u¬ªâ[@
-}ÆÑë„@VîBáH@|v£Ë…@
-ŠcF®¸R@
-#¨j õÂ@
-6Óô­p¤@	ëÉ°)¸R@
-É/’š\@¯#UÂŽ@NM¨Qì@uÐ>¬(ö@S¹ÌÌÌ@:XS×
-=@
-÷&i¯\*@
-‰1¶ñë†@ÞŠ;À @
-æ¢eç®@—¾†ÔÌÌ@÷\!¸@
-ö˜6r¸R@
-ÌYru¹@	Ñþ¼E¹@
-ÉÊi³×
-@‘¸?\*@a®34@tqò§
->@s5p¥@
-¼Ä=‰™˜@
-}ºÝ¡î@CnÂ®@
-/K¶£×@…"p®@­Ü#ÐÜ)@
-àuêÎfh@›åÐ£Ö@
-gmò¥¸@	º'‹Á™™@‰±ŸüõÂ@	ÓYwÑG®@	‘‰áH@ç¦/G
->@×¥åØQì@Ic%ƒ
->@š&ö… @
-Þub
-=p@	åãsæ¸R@
-
-LoøQì@ò3ï\*@
-õ CÝp£@
-õE-k… @	É¹&†ff@	¶ÂœÌÌ@	ëM8ž¸Q@	ËëÁ®@
-Aåüï…@
-XA«…@ê+h*áH@’ÿ®@Ô¨å@õÃ@
-d¬&«… @	Yh[¾{@EÊ33@Ö•>UÂ@
-’}/n{@	§~34@
-$Ëi¸  @žZ[…@ä^  @}£Ûb\@	Þ8í]p¤@	çÆuÂŽ@
-jŒ¬‡®@	»Õ&p¥@
-DÉNáH@& :iG®@
-=á~~[@	q¯¨\@	)É}Í™™@
-'O´¾¸R@
-×Tô\ÌÌ@F80£Ö@
-‘'aÂ@	\ã`  @	’c²™ë…@
-x?!LÌÌ@+pô)G®@
-ÿ–&  @
-ŒZQì@†Óh8Qì@
-ò…C[(ö@
-QmÐQì@
-ƒ3éöfh@W©7³×
-@!Uw¹™˜@þ©@uÃ@
-lÿô:áG@
-	Â\ÌÌ@Tu»Ì(ö@	}x4´ÌÌ@
-nkºã×
-@”T_hQì@fÓ\–fh@
-NqÂŽ@
-Iãž¸õÂ@		ø×â[@60	r=p@"åq×Â@ºÁEõ¸@
-ÏüÑ|(ö@£fag®@rráN¸R@	5VØI®@	„8«­LÌ@åaÅÂ@wÝ…… @	m-òff@C±"ŒÌÌ@Xò…¸Qì@[Ç®@øyê!ë†@VMø  @šêfÑG®@c¼Zk…@	.¹™™@ç[o\@@#Z¹™š@T§Ã×
-@Š|ÌÌ@NÒôzâ@³ ÞÚáH@Ü >—
->@ Žè:Â?õä`–Â?ë!Éõ£
->?îCÄe¸?õ1»X5¸@ $GW×
-@0é€ff@&Ä¬\@­Í\(@¿ ¿ªáH@†ÜñõÂ@n:…@zñpzâ@QT ·\*@ñù»\)@Ö“Q{G¯@4Ñ¹~áG@Ã‹(Që@GsŽ«×
-@I^ $(ö@	8™`0  @	Õg=p¥@´ù€(ö@Dô¬=p@	:Ïc×
-@êG[×
-@	,þN÷®@
-n?¿£34@	YW­±Â@§xÞ\@
-K«Áp¥@
-01#Nk„@
-ê?ä„zà@	¦öZ¿
-=@	ÅW‰&áG@	ó½žfh@
-ì;
-ñ¹G@	´û¡™™@
-¯,ºp
->@
-wæáTQì@ú'.{@oyŒÃ
->@ñƒ|æ£×@h¦Å¿
->@pqÍÑë@õs ÌÌ@8*	”zâ@XÃý.¸R@)Ùðæfg@
-~ãÃ~õÃ@<óõÂ@ŒYz@
-Níx†ªŽ@
-¯ Mp¤@
-q-O@fè\up¤@5¹·
->@7²áÀõÂ@
-ìQgÅp¤@[y6fh@
-Ž­‹HõÂ@
-UÈ¦ff@
-`¦   @
-ÓbG¯@
-Š9Úç
-=@i>‰ë×
-@
-ÐRÄTáH@
-‰Ô¶Ø£Ö@
-Ya¸É½p@¯ù+[@šB¥@
-,ØÇÁG¯@
-âk…F™š@>w8zâ@mÕà™Â@0C˜õÂ@d­ýfh@
-®Ed(ö@MëïÎ¸Q@8vãî{@=¶Å‡®@Þ·|(ö@p*'~{@ø©‡®@Ûq)HõÃ@Í®å™G®@˜xa7\*@†@ˆîfh@dªDHõÂ@w_?í\)@2t™™š@f-;
->@
-Îì[UÂ@
-šœE:¸R@O3Ý~Qì@m†ñ	Ï[@¤øõÂ@­±9Që†@¹5~¸Q@þ#hQì@ÈçÄK… @‹@¸•¸@NÚçvff@
-…2ë—®@OY=S×
-@_ôŸŒ(ö@…àG®@‘n@ã×
-@°¹tt(ö@ûÄl]ÂŽ@z:£Œ(ö@ò²"›… @;o2£34@
-—†$Ÿ\)@
-åf9™š@Ç,•R\@ãÖ\8£Ö@X®‘–fh@[ùG@£Ö@
-o‚¼×
-@}334@ÉG½à£Ö@	ˆÊw‚zâ@	SíJÁë„@
-"n™™™@xÍp¤@Â5qy™š@vªÐã×
-@c• õÃ@4ßMFáH@“ÊÖff@V•I‡\)@-¤<µ¸@²_ÖÅÂ@MYüÌÍ@±# zà@mÓæ7
->@}à~\@
-~Ð‹…@
-æ>Jã…@%óÐ  @¢hoMp¥@ñHe·
->@Zf(ö@ƒm„À  @.§Â6fg@DuTÐ  @Œ/ÙxõÂ@°˜Qì@Ï%•ù™™@	òG®@«š)ƒ×
-@’1âp¥@†˜Ò\ÌÌ@›C+ÜÌÌ@õwX¡ë†@ž*[ë…@[þf-p¤@
-ûéŠ8Qì@ÿEø±™˜@\ç;£Ö@
-Þü5¸R@
-+ç¿“×
-@	ŒÈ#34@n¸#×
-@„ê<ë…@¥ìlY™š@C>M   @,ãEÂŽ@
-en,ž{@	…Þ˜õ¸@
-ÍC?€ @=iŠ=r@‰Ø…aë…@
-Pw÷ÑG¯@w¤8˜õÂ@).y“×
-@Q¡9n{@Ø''
->@CúóhQì@p;PšáH@« ¼O\*@üô0ÿ
-=@ŽOÿ\ÌÍ@
-ÜuuÇ®@
-&…Dzâ@©ìÍ×
-@Õ`R¸Qì@h?ès34@Ct`£×@Ïð§®@®Šš[…@o{QG¯@ŽOs(£Ö@Q¢ë¹™š@è	ýb\@
-ë¬½Xzà@OfRáH@
-^)Ä·®@
-vBÌÌ@»`®œ(ö@¼ªáG@ùV[ýp£@(Épffg@—ûi”zá@àpgâ\@
-Ù~¦Qì@	Çç\*@3G‚#Qì@æ¼ÈõÃ@ª×
->@Ñ«ðW®@}YH]p¤@ó–’Qì@ª·ÛUÂŽ@Òr³34@@k¢^¸R@0õÂ@7¸«™˜@á>]ë… @s|öfg@Iµ×8Qì@Øk¦ú=r@O¸y,ÌÍ@oG¸¯34@z j»\)@tã(ýp¤@ï®QÃ34@ƒú[@Ú–´zâ@þN¥@vÈuøQì@æ=UÂŽ@E‚XQì@	r‘âVfg@"µ{…@n›`  @	ÿ*©Î{@n‚dtzâ@÷Çu’]@OÏ'®@
-LAáG®@‚<¿\)@£äMÌ(ö@
-þ×à,ÌÌ@C|E®@
-aŽz@f12\@Þg`.¸Q@ì2ýp¤@ó‡ŽhõÂ@
-xÑ^€£Ö@	’Þâ\@	§˜š=q@
-JšáG@
-²OÇQì@	('ÈõÂ@‡G:°  @ýAg
->@æ/9°p¤@
-ÇèÝë„@	qâOˆ… @	µóf¥®@
-ë¦8æfg@ÅÓ¹Â@Ûº¡±G®@Ý¨ÊX  @6NÞN¸R@
-,ÑG¯@
-e¦\*@.›=èõÂ@(F#qp¤@ €káë…@Ø2o¤zá@Ž¬É®z@µÆÕ~|@ƒGï£Ö@gGSÞ¸Q@²‚Ê¸@œÙ˜  @
-¤¥B¯\)@bµÉ—
->@×Æ4„zâ@L…C×
-@3ÞöhõÂ@Ž½$÷®@RïO[×
-@­BbãõÂ@7!H(ö@
-ªÒ_zà@
-m&‘Â=p@
-J9Qì@	ye
->@B´ÌÍ@“ÛÀ{@
-¡@y™˜@ 76Ï\*@
-ŒëÊºáH@:qý“×
-@¢*ð9 @
-œ†€£Ö@
-‹Ú¢(ö@
-ü«I5Â@×ÒÂ>z@®tIG¯@.£33@
-—¯-)™™@
-“O¹ê=p@
-(µÂŽ@
-ïëë…@	™RÖS34@
-uœ `õÂ@	[‡1™˜@}À  @‡ U3×
-@R;†®@Ølù¸@
--ÔñòÌÌ@
-å!gäõÃ@
-fC)34@	÷qôë„@RAŽÇ®@ã>¸Q@
-‹HLõÃ@×„ÓDÌÍ@
-ÑíG
->@
-ÕèèHõÃ@tD¹Â@
-¨žŸÅR@žÒ.K… @
-bc   @9ÆI £Ö@f€…O\*@jÿ'ë„@>—Ks34@¿«#Ž¸@üw÷(ö@
-óÌÒ{…@–_çQì@ú#«®@<#‚íp¤@
-S{`£Ö@	¹èš×£Ö@	ì—×ù™™@
-pîåFfh@
-0=… @
-ÁµË†fg@ð âAG®@q™Ë…@(˜j=q@<úÓ3×
-@R…¦”ÌÌ@
-nuà   @
-á^÷à(ö@c;mxõÂ@
-%Ãó×
-@
-']´záG@`¨„ÈõÂ@23}p¤@ªð(Ýp¥@úyÕÂ@e>š\@æxÙÁ¹@i£×
-@	b.¸R@
-ÕEïå¸@
-UµaÂ@"0<Ä  @hÑšIë„@
-À°Z…@
-ž„öë„@m0‚Ž¸R@P¶ªáH@ZÈÝŒ(ö@Vú×èõÂ@
-ô¸°1G®@%,#34@^ZS[@
-3¬µ™š@˜—\*@ƒ$4ªáH@‚®~HõÂ@X–ÍÀ  @ÊÂ[@
-‘Þª¦fh@	»w 
->@]6   @@ç4õÂ@ÝÅ¸@	QoAS34@
-ÁÞð£×@Ü‘Dk… @;xØx(ö@
-Ü5"™š@o‹…@
-ê®¸Qì@
-k«Ð]@oú”zà@
-óÑº·
-=@qG©™˜@
-³ùë…@
-\èæÕ¹@J=p@#"\@
-ö0ÿ2\@"\•¨õÂ@
-x¨¤ÁõÂ@
-B©8ªáG@SŒŸDzâ@§ˆäð£×@§¿ÒÐQì@
-ï¡¾…@‘Ñ1×
-@›&2{…@
-ö5‹Xz@
-“U«(õÃ@Â$N{@
-Ç×b\@
-Ò:Òà(ö@VGffg@âZÜ(ö@	/`]Ó34@
-6+VhõÃ@u2\@La?Þ  @5™˜@…¾¡0  @
-">Ù™˜@	Õb£dzà@
-aÅË`£Ö@€••Ž¸R@@AìÌÍ@
-ð&’‡
->@O_Ùw
->@àì×®@É„HQì@
-ùH}>¸R@
-åqBìÌÌ@
-:s(Ôzá@«­&èõÂ@.Ä)G¯@
-bç¦åÂ@27É²\@Î„ÄÑG®@
-êSô¹™š@ðœ'2\@.¶5ÂŽ@¤Ã×
-@
-5äõ¸@	ö-e\*@ðY»˜Qì@Ý2!ë…@ßiÃ×
-@ûH=(£Ö@œô”ó×
-@I½±fg@ª( ç„@|)ZRáG@Ÿ´¬Þ¸R@F»´s33@
-ó”§p¤@ƒÄ°êáH@ŒÌÍ@
-Žë‰™˜@
-)^òx  @XN»34@3â‰Që„@,×¢(õÂ@3ðÉÜ(ö@/*ØõÃ@
-TøÀc×
-@
-V&î¸õÂ@$åÑ>|@
-Ú§>ùG®@Ü3cøõÂ@Hþ3…@
-gÞòú=q@
-ËŒQì@
-Ë´Ñ¹@––ŒÌÌ@éÍ"=q@Øû  @Ìy”ù™˜@
-\, ŒÌÌ@¿ñó… @	¹!Ã~z@	ñÍÓ34@	æô¬ÌÍ@
-ŒJ…@
-T4ÜÌÌ@
-_·
-\(ö@
-DM­p¥@
-–‹’ŠáH@
-ZJ½•¸@
-–âç(õÃ@ZîO(ö@	ûnHõÂ@	ÖÎC;\*@	°c«dzá@	lç6¸R@b\@æq…@
-Û›Û…@ÑÕ+ð  @z†føQì@
-Ív uÂ@’–{|(ö@aOfˆQì@ÕâŒ‘ë…@™)d‡®@ÐEýPQì@ *‹ÚõÂ@
-°&úë…@
-ãÓ×
-@£(AG®@’Ÿg†úá@ÍÙàõÂ@
-ÓU|¤zá@ÎþÉfh@u#¦G®@<t|mp¤@û,Ô~¸Q@	
-`j=q@
-(Ó3
->@¡-VFfg@
-I§ÜÌÌ@yç@ªáG@YãµÂŽ@@Ò[@
-„ùAG¯@˜‰…@	r°²ÈQì@Vö*H|@¹âèQì@	ÂÛä•¸@
-þWýS34@¬…]w®@¼¨Ïß®@èHåÈ£Ö@…¦Ï€ÌÌ@_Ïdzá@	÷ äc×
-@
-ô`0­p¥@
-š4õ=p¤@
-æ®|ë… @
-oÙÙšáH@I‹P…@
-ÖqTFfh@
-Ì•ãÍp¤@
-+ïžz@:t(ö@í©¾^¸R@
-°0<(ö@
--?NS34@µ%W
-=@51 E¹@
-ZBtzá@	¦,%¸@
-”]…J=q@
-eèð  @
-´xjõÂ@
-
-9Žü(ö@	‘:Êáë…@	ÁKaG¯@	}Á‰šáG@
-g
-Ç~¸Q@òR"[@«¨fg@
-ƒ(ëÜÌÌ@C^×°õÂ@ ™
-…@
-­0¨34@‚uC™™˜@
-B÷%Ï\*@
-'Ø¹™š@;b6åÂ@kPo\*@{×™•ÂŽ@
-¬Ã‚þ¸R@	Ëu˜Î¸R@	³ £Ö@[pW¡ë…@	"BUÂŽ@
-Vê\@
-I?äˆõÃ@	P-pð  @+G€  @	­æð¢\@
-´”/`  @€ñ·x=r@
-æ(Ð £×@	×ºà  @
-Þ®@ ³­\)@šz¡34@]ôa"[@
-.Ãœ(ö@ì›µ½¸@«q
-ž|@ù§ÏÃG®@
-ÿfµ¸@
-ö€ÈQì@Ö`õÂ@¤&þÍp¤@	?’&˜Qì@ž®/ó33@„2   @¡–Y¬ÌÍ@«®@$Í)ë„@
-]Úöp¤@
-vçˆ\ÌÌ@	£N–ÕÂ@	¤#9N¸Q@	
-²ÌVfg@
-
-3SZzà@
-]ÏNz@	­iº(ö@	½‘5ZáG@	Jøú=q@	~çÿ˜Qì@
-5ehQì@
-­/²N{@
-öœp%ÂŽ@
-›nz@
-Úczäzâ@.Nç®@^GšÊ=p@
-ºÀ|@
-DBT8õÂ@Neø±G¯@ˆöð£×@ïÑÓ\*@-©Ÿ\*@3œ÷þ{@
-?©k£Ö@	’ôªáH@
-¹=‚\*@
-n+š˜õÂ@›BgË…@VÜ(ö@ÕJg
->@]qêÌÌ@yÔø{@
-»¢¯\@
-@»üz@
-íg\(ö@
-ÉC]¢[@
-‹¦”£Ö@
-c-rc¸@	(j5ÂŽ@ÞÔwÕÂŽ@	w»eG®@³nëo34@E©ÌÍ@
-¬ËL&áH@dJ¦^|@ÍB@Ü*@
-ŠíÉ;…@
-z˜ŠÙŒÌ@
-šgw;…@
-‚¸®@÷îì„ÌÌ@}¾>'… @
-þ¼("=p@	x£p$zâ@	ÂÚ\*@)0ÀˆQì@	ûe¶›… @
-WªZë†@	óœ	B\@
-hÙÍ'®@’ªg®@š&êÇ®@„ì‡
-=@eãN|@
-ñBO¥¹@
-¹6ëõÃ@‡²QG®@)É;Ffg@>+b[@
- ˆœß®@“2.¸R@AM(ö@úÝoZáH@Ñr_:áH@VÎÛXáH@<$ÞòáH@Lá€à£Ö@GE%Â@[õI§
->@¦c;¬(ö@
-õ^BQì@
-¼o*Î¸R@+¥ñë†@pf×
-@
-q‹H	G®@	†¤æéG¯@	Á333@	Öw—p¤@	@,dž¸R@
-Èá}E¸@
-”ì²õ¸@
-J"¾¸R@”¡ßí™š@ÎáŸ
-=@
-¹²õåÂ@œ(>8  @¸ÁHÙ™™@OÜÌÌ@	Ã»%r[@
-?*Ññë†@K<òÊáH@6,\)@
-{|zà@	ø«G®@	Ž@;  @	wFYÂŽ@
-…,®@
-”Ó¾n{@Å2œ¡ë„@Òâ>¸Q@	qbp£Ö@xIhç\(@Õ8/…@	«k„Ùp¤@
-j)ýG®@
-éðÕÂ@EBªPÇ¯@
-‡SRaG¯@
- B3…34@^À›Ë…@ÏHsÇ
->@mÂJP£Ö@
-vw%¸@
-þ(•!G®@ÉÙJ=q@6—s©Â@†‡£34@
-	j x£Ö@
-úð®õÃ@
-è/ÂÌÌ@M"õffh@¬¾O®@XHä0£Ö@0‘O\*@y/öÁ¸@‘iy	áH@*ì£×@
-ýåôzâ@Î®¶’áH@
-°ÕLfg@@RËáë…@YÔ	¦fg@C{Õa™˜@	ž0—
->@ÉoÃ×
-@	‚©ëp¤@
-©sºø£×@kwŒ8(ö@
-é“u¸@	PpA`  @çþj]@lE XõÂ@·¤¤ÌÌ@	˜JjáH@
-òÇ^¨£×@(deh(ö@
-zÇ'8Qì@
-‹/|(ö@Í¡áÌÌ@¤5)µÂŽ@¿¯zá@-ÈœVff@SÅ) £Ö@a¯éð¤@æü-\Qì@
-Ô×|zâ@¡qY[@
-ý­2áH@
-É¿9™˜@
-?À¸R@
-n\*@”ð£×@°ÌlÓ… @T´>z@
-ê‡!zá@NneË… @‚úÉêáH@sW™5¸@‚^1äÔz@	âôu…¹@
-=ÔØ6fg@³d=£Ö@
-×ëyVfg@
-Ÿô&”zâ@ü¥„Qì@
-£™o\*@
-¹þU®¸R@«UBzz@GYµp  @~©
->@¥–”zâ@{J³Ž|@‘Nú“×
-@»6¼ÊáG@ž%Š…@Ñ,mÒ=p@´G#33@ˆJÕà  @ƒ< £×@rà/ýp¥@þP	ù™š@K‹T¦fg@	lÑþƒ×
-@Ûw'×
-@­^ÅÏ\)@	ßz@`  @
-‡ú%‡
-=@lÅ!ë†@ú†ÜœÌÌ@¼]ÚáH@
-Âõýß
->@
-OH^¸Q@
-Öÿf’\@dBÂŽ@s$ke¸@e”‰ £×@#’Ž1G¯@
-ý\e¨(ö@	Õ5Êzà@ö?¹@
- .¸R@š'dY™š@Ï)Œ7
->@º×Në†@ëß­ü(ö@D³ü1=q@rëÚØQì@Np2
->@
-(þslÌÌ@
-3¶p¤@
-ZçF˜£Ö@(*Ï½¹@Û#b\@
-ÖX
-Û…@
-í{4(ö@Ÿ¦Çp  @blkˆQì@Sß z@•½p¥@
-¨–«LÌÌ@S…æ#×
-@˜)Â]ë„@àöM¦¸Q@	8Ç\zà@
-8®Ú8õÂ@å´Ôò=p@»g‘¦{@Ðìï0[@
-.Å/hQì@
-p?`õÂ@±ÍPN¸R@
-Ä¥D–¸Q@Q(FÁG¯@
-ß<Ðq¸@h7=š¸@b(Äzà@
-ÙŠìn¸R@•ÓqG®@w‡.G®@
-ÚBö*=r@	tOñ£Ö@þln%p¤@¸ mfg@ë¿Xr\@	x¹ð£Ö@
-{W'i™˜@	Ïª>   @	ÃùÓ34@
-æ.Ãg
->@
-y29™™@Ó³\*@§¶P¸@<wv‹×
-@: ffh@•„ÎS®@
-ÄÀVë… @
-øü9™š@
-'‰ûÖff@ÇGnG\*@
-Ó³AÛ34@	tÚ.µÂŽ@
-E’K,ÌÌ@{ãjò\@
-÷Ã×
-=@’mp¤@É¦æfh@kÅXfg@ªƒ×
-@b+«×
-@·\†ºáG@D¾j
->@Þ53\*@+Ìè£Ö@	Î}÷Ñ¸@ðíôZ=r@
-€‹›×
-@t8Z™˜@FBÆšáH@Nº„ì(ö@ÿæP	™š@
-Âô¨?\)@
-Ú‰uÈ|@±~z@³è/¸@äÃ6áH@_(/Âff@U¾›C®@
-¾FX  @†?‰ã… @×›Å¸@mÉþ&fg@J¬¦¸R@
-Ë$Óã×
-@
-s_ø¼Úâ@–•å¸õÃ@s(Qì@z5,zâ@
-úA£Öff@O÷×,ÌÌ@6ƒòC… @x`µ®@
-$àíA¸@
-ÂÒ˜Ü(ö@„ü`€  @{Ï”C×
-@
-$ÝgØQì@
-Z\Ë$£×@dš‚[@˜¿c…@
-¦äüÌÌ@lÑW*=p@
-Æcb§®@¶®Ó×™˜@	Ï¯JÊ|@
-’ùf¸R@
-€×"\@xÿ—®@	Ê^–Üc×@TMgî{@Lw¤Ž@ïPc34@
-ndHtzá@áÃ aë†@
-ý-îz@.$e™š@—å<¯\*@	Y—naG®@	.½R¹LÌ@(‹åª=p@rnßÂ@Þ;ç\)@©ºÞ÷
->@”‰34@
-Ð×dG®@c\]š@	¯™H§
-=@	§~øõÂ@	œI0g\*@…q3©™š@
-Ïi‹
-=@	ÁÅöº=r@
-3ºn£×
-@
-M·z!G¯@ø×	™š@
-¤r•¨õÂ@
-c×33@	ÿ8õÃ@
-´~1¹G®@
-OÄÙ…@Y1…W
-=@hè\)@	íLI™š@ö4†fh@Ï&¬ÌÌ@BÆú=q@êd¸þ¸R@	 
-óQë†@
-iM§záH@
-æ]®°  @pmæ®@
-#
-‹O\*@
-{¹¨ÚáH@£ä?
->@
-¶åÒEp¥@	v©?Ÿ\*@*äšáH@î‹ÿ\)@¬ëTáG@
-É—r™™™@>²\@
-ð+±é¸@
-ø‚ós33@
-aë…@
-YŸ·
->@
-süZ×
-@
-ÀÊm+…@	÷ÜýB\@
-j
-.®@‹b&fh@
-‡ÍË…@
-¬`g%Â@
-ÃØÐ£Ö@
-Vjá0  @
-ˆ‡-,ÌÍ@
-‡¸«±G¯@	­Uc   @	'—n£Ö@
-êl\ÌÍ@
-Äb¢³34@	o/{U{@
-Šw´ç®@
-È@/ð  @
-W!p  @
-«œ£Ö@	µ,£´õÂ@¼]Ò[@Ënaë„@
-e¼²üÌÌ@PØ¡¥¤@îì±®@
-k›í³×
-@
-Ý¹l   @
-öõê6{@
-‚ÚrÌÌ@}i$zâ@
-Ì«xõÃ@	‹‚EõÂ@
-BRu¥p¤@8u ff@
-IˆÎ|@GRY˜õÃ@	!¿dœ(ö@
-[<Å½p¥@ôyu*=p@±—2i@	Íô»¾fg@	¾;•Â@	ÇÍ	Nz@	Ž-îï
->@=×¼kY™@	:˜ÛÀ  @‡p£Ö@qâJáH@{?W@  @
-j—mºáH@
-#,Äë„@õvÍ†fh@
-y/iÙ™™@	~Ÿð  @
-îžÍ"\@˜šð³33@
-'}zôzá@	ÿ9ÞÃ×
-@¿­Æfg@ÏÃ)é™™@	—ë›…@
-\þ~»…@
-³ÚâêG®@d¹È˜  @
-&„à  @	ÿW¶¨£×@	Ñ6p¤@	oD%¹@
-ëÈš•Â@
-¸TA6fg@	ž®˜Û×
-@h÷šáH@
-ó‡ÂáG@
-adÐ]p¥@
-«€*'\*@
-;+Š=™™@
-›Õæ×
-@	ÿ¢p¤@	ÔCèxõÂ@	˜Sµ¹G®@	è¸”zâ@
-³¸”·×
-@YÐªÓ×
-@	ê"ÌO\@ê™¬.¸Q@	VÙ~ÜÂ@
-YÐD(ö@£#,]p¥@Ë+ŒÌÍ@ ÿï
-ÌÌ@Lç)±p¤@S»}Â@HðüB[@
-ý~zá@
-¿”	™™@n™ªê=r@	Ç‰ZVfh@î§Që†@	pM˜ú=r@	ß¯•ƒ×
-@‰™š@ÑUo(ö@
-¿Þ6ff@
-ê+ä°  @
-Œ½³Ì™™@‡%ÛeÂ@Zmáæ{@êæ“üzá@²±šhõÃ@
-^QÀB=q@ÌŽ!ë„@lV¥zá@4à~6fh@Ï4Ç×
-@
-ÆœÈ¸Qì@
-×í933@	±“Þ¸R@
--¥'à  @
-¢OÎØ(ö@	’ºáG@™´üÌÍ@ò†ªR\@	òìH;…@Tfh@ >¶z@
-¼n	ûõÂ@%õÙà£×@Õ{5’áG@äŽÃ$zá@
-0¨¨õÂ@	Ž—m…@}º¸£×@	›	gfg@
-'j#—
->@
-VšPXG®@
-&»²[@
-äŸË‘ÌÍ@$"\@‹õ©'…@
-=š@	üCt¨õÃ@¢|æì(ö@	õ—®@
- ‹6ØõÃ@ö¨Ep¥@žiG¯@ƒ¶Àff@èøQì@
-£33@-ˆ‡
->@[YÖÅÂŽ@	çkTó33@	Œ9ªqë…@	x¹|ð  @Z`òváG@
-în-¸@ü¢zaë†@p>Ž_\(@
-¬·k zà@öq‰ž¸R@!¾.Â@q4…¸@mXUÂ@
-ç5@8Qì@‰-Å¸@
-OOXõÂ@	ã)ìb[@
-®PzÏ
->@Ð¨#… @¹M,P£Ö@
-Ä¿òzà@
-[îÐbáG@%€Øå
-=@5…aë…@
-Ä¿[jáG@mË£Ö@
-8òFfg@I(My¸@é¯HÈQì@ §?yõÂ@YMp¤@;ÉìÍÂ@ÈpñÐ£Ö@
-·mÔÂŽ@b=p@žm¯¹™™@
-òÞAW… @
-®¿™ç®@
-Q)‰úáG@.ÓÙz@|
-«¾áH@
-ì^*”fh@
-—ì
-dõÃ@
-„ì;-p¤@¯–.zá@iFÄ   @‰o·ýp¤@
-V[½î”|@
-zÖƒ×
-@	„²5±G®@
-}Ê¦®z@
-ºùZŽp¤@;ÈØ¬õÂ@
-íLœó®@A?9û…@š·5G®@«cÒ¨Qì@ŒR\õÂ@ï#B\@êÍ²\@ÄÊ=p@	¶Ümdzâ@7ãLð¥@
-?ê­p¥@‰ËÀáH@ÿ.3Ffg@	Y™ÅõÃ@édAÂ@¦(BÌÍ@Íq?\)@ÆZáH@=è?Œ(ö@¸%¹@à}«®@B™VZW
-@ºÙL(ö@Ë²@~z@
-Ì¸Qì@zìÌÍ@
-šÐW¯@
-¦áq… @"‹8˜õÂ@V3pô\@
-@7	Qì@
-s34@ê²¤=\*@	áñG¯@	‘¬æèQì@ÿvª@  @ ±÷ù™š@þ—ênff@áK m¸@	o#gFfg@	¨‹ êõÂ@	©x:0õÂ@
-Ž¥…g\@
-XHÒ£æh@mõÓ×
-@0HÍp¤@˜ùÌ(ö@
-ŸÑ<Îz@¹hdÿ®@€RjáH@T_;×
-@
-*¥åÂŽ@
-kÜš*33@
-„Ÿ™ë…@µ–LõÂ@ÓÊã{@®@ÎØ£×@_GëuÂ@ë¼É\¸Q@	Òøv—®@4R;µp¥@
-õ@»…@5€½#Ö@
-oÉˆä  @
-{ÌÂÇ®@"K†\)@"Û-…¸@’G`—
->@{ýœmp¥@
-»pæ¢áH@
-|SSw
->@
-ÒÆÃ¯\*@
-ï	§ƒÂ@N9J[… @
-#ÎÑë†@'4Ý³33@ñìÓ×
-@ÍÅ1p¤@õîZë33@tQžÀ  @Ÿx.2ff@Æ#ïÁp¤@V¯bs\*@	GáZÏ\*@	f6Ðéë…@
-÷#¢ñG¯@nfµ)G¯@Ô(‹Îz@	Æ:ÄõÂ@
-ÐIC'
->@
-£àû·®@O:é™˜@Ôû êáG@"ÙHDzà@
-jZÒÔQì@
-ÞÿäÛ…@BûP²áH@Fá‡áG®@
-Üúl(ö@	ÔÎ?K×
-@Ø§ÝG®@	âNÒ\@	›dbê=q@
-E]\)@œ:*P®@
-èsõÃ@q~¬34@
-†ÞA™š@yŽ\™™@b–_Özâ@
-ù½Þ*\@ÐAÑR=q@	:m¬ö…@
-Y)ác®@	ã*9ë†@lzi¤(ö@{Yf¸R@Ì‹³Š=q@	¶þ9S\*@)1þÍG¯@-‡ç\*@ò¥@  @~šøƒ×
-@
-ÊÁU×
-=@
-!Ÿ‡$zà@ø#É?
->@w×ªÔzà@	bþÈ‹  @Æ02Ì®@
-nG¼¸@
-Õ­4ýp¤@
-æÚ¦p£Ö@
-iÈ¤zá@åËn34@¼•e¹×
-@	²ˆ$¹™˜@
-v>åUG®@	Äëè$zá@C6ÎJúá@
-{I¬]p¤@	Ï¸]r£Ö@	ªUÖž¹@
-44T¦  @Å›i£®@ †«Q™™@
-Ÿ^IÂŽ@Üa#%p¥@
-­(Ý334@
-ù½žúáH@
-ˆ'Å®fg@)ÿ^U¸@
-ªSŽff@çÃ™ß
-=@
-G°§^ÌÌ@ÂîË £Ö@þñ†«34@
-­¬cY™š@
-üþ±™¹™@
-»wá0õÂ@×È\@
-Ú"£Ö@ë~¿h=p@
-'—[r=r@û1éÙ™š@‘«B[@HäÁž¸R@	è¹"(ö@³Qì@úÉuÕ¸@6Ì¬,£×@ú"\@	¢ 34@
-ç™™˜@›­+…@gä	ã×
-@
-Ú&é¡G®@×
-ÄxQì@
-dÒ÷
-=@	…âº\@ÎªÀqë…@J‰f¦ff@
-?qH  @Iefg@
-‰ lZáG@ùyÀ  @
-Úïð}p¥@
-«
-Ð  @r34Š×
-@
-Õˆ(õÂ@ªŽa7®@‰ãÿ×
-@ú¾üÿ\)@˜•\*@m`›š=r@um"\@{’iÙp¤@cîlQì@z	Ä£Ö@Ü¦[@°‡[×
-@BùÁŒzá@ºÿÂ¾¸R@GÐÊfg@NPs34@éKÔ«
-=@
-ô0ÌÍ@Ë¯óQì@í
-feÂ@	k$V7®@	Ãû1.fg@	¹W÷Î¸R@	~3Eè–@‰µCD¸R@™ônQì@
-T@‰G¯@
-&\n|@	i~Šï\*@	ùì¹  @ÆŠ\fh@NÆ»Nz@I:­åÂ@ËÜy™š@©é˜=p@q¯@?\)@o,³×
-@kØtÈÌÌ@Á?*œzá@Î³ˆÌzâ@ë(§… @ÐV¹˜Qì@'å¡h£Ö@Äç<Éë†@X†ô‹33@ÌžŽµ™š@ë©I{… @µ¦ã34@jˆëé
->@OÖR,zâ@
-ìÒS×
-@
-¾pÀQì@!åiQì@1fÕ/\*@²tÚC×
-@oêmp¤@8_{¦|@
-¿qP¸  @ONØ³… @³\¸œ(ö@	îÇq7®@
-W"ó33@íÛú33@r$ÌŸÂ@8ØjZ=p@I™[$  @f_…Öff@Þ=ž{@
-y¶ÅÂ@
-ûöš•¹@¹2ÿ\*@9Ä`=Â@1¡¸Qì@
-îý¬øQì@
-ÓÄb\@)ÜÆ1G®@
-¿BKåÂ@
-ºž£34@è½ó×
-@™êlÑë„@ÜˆaG®@ÞZä¸Qì@
-Å@{   @•ñH£Ö@mÙ!¸Q@Cø³…@w{š=p@
-$xÃ…@ßÛîÓ34@9…Êw¹@ ”tÒ\@¤ôû€¸R@
-h†2]p¥@
-(W×2Äz@
-–0²Â@‡Ã"#ë„@
-[…¨®@|º Š=p@¢®ÆA×
-@
-áTj=q@>ÑS\*@$Äœ.{@sæþ
->@°‰Qì@Æ$ì¦fh@Ç{Hzà@ÈÕ´[×
-@6[Ž¢|@	Á6ííÂ@	žvô˜Qì@]¡+G¯@ ‘C³×
-@
-’i>áH@‡ZXQì@~L„k…@O2™™@
-<”WÅ¸@
-nyø´£Ö@¨)€…@è¹@°0ó×
-@WõÂTzà@
-¥Dý®@(¼íp¥@`Ôý‹34@
-¾rN†õÂ@
-WÇ¤˜£Ö@
-)‡h±ë„@_ÁéG®@
-_Yë
->@
-öµp¤@Åú@—®@dÛ$(ö@
-…@´Ú[@
-Þ´6\*@PYÈ·\*@ÄÔœzà@
-`C™Ø£×@
-ƒw&záG@5M p£×@,èrÇ®@BúúÃ
->@ü¶Þ¸Q@
-M÷
-"\@
-XJv¹G®@	~Reã9™@	=íÒK…@	H·§®@
-Ô._±ë…@²!Î.ff@2Mí`£Ö@
-Â¦­J=q@f­g\)@
-ÅÓ3§34@7#.p¤@
-éhQ(ö@+ÄùõŸ\@
-sö|@
-¶m¤zà@	+… @’Ø+ÝÂ@UÈ834@Ñ°ÜæáH@ª‰é£Ö@úó›×
-@‹Žc34@
-êüƒÆÌÌ@>½ÑÂŽ@÷ÏL@  @yÝˆì¸R@÷¦+6fh@
-l!¹@
-|!L·™š@
-%|FõÃ@
-M‰ÌÒ=q@
-=%™;®@¬{>&fg@ÜX=ý×
-@	z034@	{bÂ=p@ã:Âß\*@N|Â*áH@	ú¦Ÿò£Ö@
-°–¾b=r@
-6Z9   @ü”#×
-@
-ÎÛñªff@JÂî=r@¹ ™™@
-833@
-ÿŠEg
->@kÁ™˜@B^/G®@øröáG@¬Qos…@ÿ¨C×
-@gš95p¥@qTõÂŽ@}=—®@ s‘ø  @Œ¾ÚáH@,‰Âl(ö@ÑR¸õÃ@a)Jp¤@+VÐep¤@	¹!ë†@H¿C…@	ÔÚG®@$Åäýp¤@cðªc×
-@
-5Å¨ç®@
-nM\í™˜@
-ÀowG
->@	Á!`Ä(ö@	Ü%[!S3@	[=®ªõÂ@ŒúÕ÷aH@	§ôÐ–|@rË¼Û34@´"@{
->@
-¶fff@	ª¾þƒzà@
-;Ib!34@0ìŒŽÌÍ@Â-Þ=¸@šÉŠz@€X{×
-@Âó¼Qì@‘=ÓÅ™˜@¬¡x¤ÌÍ@
-Þ!>¸R@	¼¨iÍzá@
-÷ŠäáH@	¤«ËÌÍ@#âÛÈ£Ö@‡HÜ×\)@ô¯‰¸@‹¡5ø\@š®¬œ(@8Î>Ùk…@	è¦Ou¹@K_¥¿…@çoUR=p@¾Çÿ…@!'ÀÞáG@
-±9<zà@¶,Ÿ<ÌÍ@w@ž¹@
-r±Ÿzâ@	gžÉ¸@	ù1ú£Ö@"Í—Cj=@•]SÂŽ@ÃqS×
-@Ø`ÙÀQì@
-±ÔÓ8R@
-:@O&f@
-þ£’ŒÌÌ@/¶P’=q@cË™@õÂ@	D‰6É
->@Îx—@ÌÌ@#ÐB!ýq@
-¸T@ó«„@ÍÞÃÐ£Ö@)ÈÌp¤@&Vyó…@èt[p£×@=f?(ö@°7ûUp¤@xEî4  @‹ùe$zá@ùœ[Š\@ï;Ã…@°×5p×
-@
-›©ˆÖ{@R¸R@|™Ø£™˜@ÙÀçø:à@¿‹"ÌÌ@}pbfg@GËÎy™™@1ªHF[@
-¡Øã™G¯@	ªó/®@
-«Œ¼Ã33@
-ø¾“/ë…@s*•¹@¤rÒƒ˜@?që„@
-™³h“33@Âg‘‰™™@´5ŽC…@	¦àd´Qì@
- êg×
-@ôˆ¤ÌÌ@ ‚úŸ\)@®K.¬ÌÍ@ÚëÚ]p¥@C»3
-zá@.ÝÂõÂ@z‘;*¸Q@lÝ   @¿ Úà  @ ¨‰™š@d$)™™@ã]¸@¸|œCÖ@2ùz-*@µq¹@²¹6Ã×
-@Ä–éÂŽ@ÒXóŠ=r@K>uG¯@'ÎVéë…@Ñf¨!  @_\îÙ™@†š´\@n þ×
-@dýÀÞë†@kÎCX™™@@6ô
-=@J—5¼Qì@ßÄ®@(dÓp¤@ÙVq»æg@Ã:ÎÌÌ@ i‹Â@
-W{Ã©ãÖ@
-D'YG®@FáG@
-’'Œð=q@Çðj=p@ï÷ÜÒ{@¬=$”  @¨_¿$  @Û¼
-/ž¹@¿I+½p¤@’G%zà@Øf·Ë
->@ë_®@Öqù¯
->@
-E“ñp¥@!Ê ÌÍ@
-–ÿ˜Þ{@
-ÇÅç34@
-TÑÕáÂŽ@
-‘9N¸Q@
-q	ÅÂ@
-Å?®@	Æõp¤@
-ËŽF°ÌÍ@
-§FBç\)@
-“ƒG®@¥eéa
->@¾qŒ·…@ ßaë†@
-õÕUz@baS®@	ì‚	¥¹@Ïæ³¹@
-è T*áG@	ûn³œ(ö@
-ÊOåp¥@ô õÂ@	,ýäÌ(ö@	§¢]q¸@
-<1Åâ¸@¬Œâk„@	*Š	G¯@ƒtíp¤@
-ÿX¸õÂ@
-ŽÁÕšW
-@
-‘¤áH@9¥Ðê˜@
-Fªa×
-@
-y‹jÜ)@	ôõ»©¸@+ƒªR\@ÂçÖÃ\*@àÖÑë„ ]     µb7p…°éë    M b    €ê1    ÃçÓ      æa     µb7p…áéë             @äÐü  °a     BäÐü   µb7p… €a    `ÿÿÿÿÿÿÿ       Èéë    °éë     JäÐü         STJ  0-;                                   ßŸb    €ê1    @"R           Èéë    àéë            à@äÐü  Oa    Ð@äÐü  bû          à@äÐü  @"R             DäÐü  pQa    0-;     µb7p…                 FäÐü  q    0-;     µb7p…€ê1    q    àcq    iäÐü   FäÐü  ÃçÓ      DäÐü   µb7p… ·            ÀAäÐü  q     FäÐü          ]a         ^   ]a  ÀGäÐü  £H  `Oa    h       FäÐü  bû    éë     µb7p…         ]a  ÀGäÐü         C           B    Ê_G  \j    <           àIäÐü   IäÐü         h      ~          ü  ½l    tGäÐü          
-     >                 ÿÿÿÿÿÿÿÿ~                         ü         jq     µb7p…Ô›1            PCäÐü   JäÐü  0HäÐü  bû            ÀGäÐü  `!l     µb7p…Ô›1        0   àIäÐü   IäÐü  0HäÐü  bû    éë    iäÐü          ¬fÐ             0HäÐü           JäÐü  éë    ¬ÜÐ     ÏCäÐü       À¯    bû    0ºa     FäÐü  bû    Õ             ü_b    éë    "I          ·ÚÔ ‰  ÈEäÐü                  ÄEäÐü          49I   FäÐü           Íð     µb7p…Ô›1    Ô›1            |“Ø   Š  ÐJ@  êvþ    ˜G@  H°c  é—Ø        PfA   Š  ¨EäÐü  ¤EäÐü  @,f    PfA  êvþ    ¤EäÐü  ¨Ûù    à´ú     µb7p…    ü  Ž°@     R@     pFäÐü  `FäÐü  bû           F       0ýa            ÐEäÐ            @HäÐü  êvþ     GäÐü  Ž°@     P–Û  `FäÐü  pFäÐü  ¢Ø         H°c                        à’Û  H°c  à’Û  @IäÐ   P–Û              7p…           ü  ÿÿÿÿ    iäÐü  SA   Š          µb7p…Íð            ÐFäÐü   JäÐü  @IäÐü  ;      à’Û  ð1&    @,f    KäÐü   KäÐü  qÙ                 SA   ÿG  éë    ÐJäÐü  LäÐü  °b    
