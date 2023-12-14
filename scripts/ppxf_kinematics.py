@@ -24,11 +24,11 @@ import matplotlib.pyplot as plt
 # import ppxf.ppxf_util as util
 # import ppxf.sps_util as lib
 
-from ppxf_backup.ppxf import ppxf
-import ppxf_backup.ppxf_util as util
-import ppxf_backup.sps_util as lib
+from ppxf.ppxf import ppxf
+import ppxf.ppxf_util as util
+import ppxf.sps_util as lib
 
-def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1, fit='default', moments=2, mdegree=6):
+def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='default', moments=2, mdegree=6):
 
     # Read a galaxy spectrum and define the wavelength range
     hdu = fits.open(file)
@@ -38,7 +38,7 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1, fit='default', moments=
     
     # Use these lines if your spectrum is at low-z (z<0.01
     redshift_0 = 0                  # Ignore cosmological redshift for local galaxies
-    redshift = -0.0015               # Initial redshift estimate of the galaxy
+    redshift = -0.000417               # Initial redshift estimate of the galaxy
 
     galaxy, ln_lam1, velscale = util.log_rebin(lamRange1, gal_lin)
     galaxy = galaxy/np.median(galaxy)  # Normalize spectrum to avoid numerical issues
@@ -62,9 +62,9 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wavcut=-1, fit='default', moments=
 
     # Compute a mask for gas emission lines
     if fit == 'default':
-        goodPixels = util.determine_goodpixels(ln_lam1, lam_range_temp, redshift)[:wavcut]
+        goodPixels = util.determine_goodpixels(ln_lam1, lam_range_temp, redshift)[wav_min:wav_max]
     elif fit == 'all':
-        goodPixels = np.arange(0, len(galaxy)-10, 1)[:wavcut] # all
+        goodPixels = np.arange(0, len(galaxy)-10, 1)[wav_min:wav_max] # all
 
     # Here the actual fit starts. The best fit is plotted on the screen. Gas
     # emission lines are excluded from the pPXF fit using the GOODPIXELS
