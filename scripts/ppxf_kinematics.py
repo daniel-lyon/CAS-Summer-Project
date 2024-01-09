@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 
 from ppxf.ppxf import ppxf
 import ppxf.ppxf_util as util
-import ppxf.sps_util as lib
+import ppxf.miles_util as lib
 
 def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='default', moments=2, mdegree=6):
 
@@ -38,7 +38,7 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
     
     # Use these lines if your spectrum is at low-z (z<0.01
     redshift_0 = 0                  # Ignore cosmological redshift for local galaxies
-    redshift = -0.000417               # Initial redshift estimate of the galaxy
+    redshift = 0.000515               # Initial redshift estimate of the galaxy
 
     galaxy, ln_lam1, velscale = util.log_rebin(lamRange1, gal_lin)
     galaxy = galaxy/np.median(galaxy)  # Normalize spectrum to avoid numerical issues
