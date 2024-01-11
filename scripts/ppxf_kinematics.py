@@ -20,15 +20,15 @@ from astropy.io import fits
 import numpy as np
 import matplotlib.pyplot as plt
 
-# from ppxf.ppxf import ppxf
-# import ppxf.ppxf_util as util
-# import ppxf.sps_util as lib
-
 from ppxf.ppxf import ppxf
 import ppxf.ppxf_util as util
-import ppxf.miles_util as lib
+import ppxf.sps_util as lib
 
-def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='default', moments=2, mdegree=6):
+# from ppxf.ppxf import ppxf
+# import ppxf.ppxf_util as util
+# import ppxf.miles_util as lib
+
+def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='default', moments=2, mdegree=6, zi=0.000515):
 
     # Read a galaxy spectrum and define the wavelength range
     hdu = fits.open(file)
@@ -38,7 +38,7 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
     
     # Use these lines if your spectrum is at low-z (z<0.01
     redshift_0 = 0                  # Ignore cosmological redshift for local galaxies
-    redshift = 0.000515               # Initial redshift estimate of the galaxy
+    redshift = zi               # Initial redshift estimate of the galaxy
 
     galaxy, ln_lam1, velscale = util.log_rebin(lamRange1, gal_lin)
     galaxy = galaxy/np.median(galaxy)  # Normalize spectrum to avoid numerical issues
@@ -75,10 +75,11 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
     t = clock()
 
     pp = ppxf(sps.templates, galaxy, noise, velscale, start,
-              goodpixels=goodPixels, plot=True, 
-              moments=moments, degree=degree, mdegree=mdegree,
-              lam=np.exp(ln_lam1),
-              lam_temp=sps.lam_temp, component=np.zeros_like(len(sps.templates)))
+        goodpixels=goodPixels, plot=True, 
+        moments=moments, degree=degree, mdegree=mdegree,
+        lam=np.exp(ln_lam1),
+        lam_temp=sps.lam_temp, 
+        component=np.zeros_like(len(sps.templates)))
     
     residuals = galaxy[:len(goodPixels)] - pp.bestfit[:len(goodPixels)]
     signal = np.median((pp.bestfit[:len(goodPixels)] - pp.apoly[:len(goodPixels)]))#/pp1.mpoly)
@@ -109,8 +110,10 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results/Globs/Sextans_A_GC1/obj1/mean_NCS.fits'
-    fwhm_gal = 4925 / 4000
-    wavcut = -1
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/NGC_247/GCs/obj1/mean_NCS.fits'
+    fwhm_gal = 4550 / 1800
+    wav_mix = 0
+    wav_max = -1
     degree = 6 # legendre polynomial degree
-    ppxf_kinematics(file, fwhm_gal, degree, wavcut, moments=2, mdegree=6, fit='all')
+    # ppxf_kinematics(file, fwhm_gal, degree, wavcut, moments=2, mdegree=6, fit='all')
+    ppxf_kinematics(file, fwhm_gal, degree, wav_mix, wav_max, fit='all', mdegree=6, moments=[2,2])
