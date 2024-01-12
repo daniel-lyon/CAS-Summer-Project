@@ -116,4 +116,4 @@ if __name__ == '__main__':
     wav_max = -1
     degree = 6 # legendre polynomial degree
     # ppxf_kinematics(file, fwhm_gal, degree, wavcut, moments=2, mdegree=6, fit='all')
-    ppxf_kinematics(file, fwhm_gal, degree, wav_mix, wav_max, fit='all', mdegree=6, moments=[2,2])
+    ppxf_kinematics(file, fwhm_gal, degree, wav_mix, wav_max, fit='all', mdegree=6, moments=2)
