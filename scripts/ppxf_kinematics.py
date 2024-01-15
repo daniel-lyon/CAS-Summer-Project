@@ -65,6 +65,10 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
         goodPixels = util.determine_goodpixels(ln_lam1, lam_range_temp, redshift)[wav_min:wav_max]
     elif fit == 'all':
         goodPixels = np.arange(0, len(galaxy)-10, 1)[wav_min:wav_max] # all
+    elif fit == 'blue':
+        goodPixels = np.arange(0, round(len(galaxy)/2), 1)
+    elif fit == 'red':
+        goodPixels = np.arange(round(len(galaxy)/2), len(galaxy)-100, 1)
 
     # Here the actual fit starts. The best fit is plotted on the screen. Gas
     # emission lines are excluded from the pPXF fit using the GOODPIXELS
@@ -110,10 +114,15 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/NGC_247/GCs/obj1/mean_NCS.fits'
-    fwhm_gal = 4550 / 1800
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/Sextans_A_GC1/obj1/mean_NCS.fits'
+    # fwhm_gal = 4550 / 1800
+    # fwhm_gal = 5080 / 9000
+    # fwhm_gal = 5070 / 9000
+    # fwhm_gal = 4550 / 900
+    fwhm_gal = 4925 / 4000
+
     wav_mix = 0
     wav_max = -1
-    degree = 6 # legendre polynomial degree
+    degree = 2 # legendre polynomial degree
     # ppxf_kinematics(file, fwhm_gal, degree, wavcut, moments=2, mdegree=6, fit='all')
-    ppxf_kinematics(file, fwhm_gal, degree, wav_mix, wav_max, fit='all', mdegree=6, moments=2)
+    ppxf_kinematics(file, fwhm_gal, degree, wav_mix, wav_max, fit='blue', mdegree=2, moments=2)
