@@ -114,12 +114,12 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/Sextans_A_GC1/obj1/mean_NCS.fits'
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/M31_H12/obj1/mean_NCS.fits'
     # fwhm_gal = 4550 / 1800
     # fwhm_gal = 5080 / 9000
-    # fwhm_gal = 5070 / 9000
+    fwhm_gal = 5070 / 9000
     # fwhm_gal = 4550 / 900
-    fwhm_gal = 4925 / 4000
+    # fwhm_gal = 4925 / 4000
 
     wav_mix = 0
     wav_max = -1
