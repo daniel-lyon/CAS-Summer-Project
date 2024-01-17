@@ -66,9 +66,9 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
     elif fit == 'all':
         goodPixels = np.arange(0, len(galaxy)-10, 1)[wav_min:wav_max] # all
     elif fit == 'blue':
-        goodPixels = np.arange(0, round(len(galaxy)/2), 1)
+        goodPixels = np.arange(0, round(len(galaxy)/2), 1)[wav_min:wav_max]
     elif fit == 'red':
-        goodPixels = np.arange(round(len(galaxy)/2), len(galaxy)-100, 1)
+        goodPixels = np.arange(round(len(galaxy)/2), len(galaxy)-10, 1)[wav_min:wav_max]
 
     # Here the actual fit starts. The best fit is plotted on the screen. Gas
     # emission lines are excluded from the pPXF fit using the GOODPIXELS
@@ -109,20 +109,25 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
     plt.show()
     return pp.sol[0], pp.sol[1], redshift_fit, redshift_err
 
-
 ##############################################################################
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/M31_H12/obj1/mean_NCS.fits'
-    # fwhm_gal = 4550 / 1800
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/Sextans_A_GC1/obj1/mean_NCS.fits'
+    fwhm_gal = 4550 / 1800
     # fwhm_gal = 5080 / 9000
-    fwhm_gal = 5070 / 9000
+    # fwhm_gal = 5070 / 9000
     # fwhm_gal = 4550 / 900
     # fwhm_gal = 4925 / 4000
 
-    wav_mix = 0
+    # Blue
+    # wav_mix = 0
+    # wav_max = 900
+
+    # Red
+    wav_mix = 900
     wav_max = -1
-    degree = 2 # legendre polynomial degree
+
+    degree = 1 # legendre polynomial degree
     # ppxf_kinematics(file, fwhm_gal, degree, wavcut, moments=2, mdegree=6, fit='all')
-    ppxf_kinematics(file, fwhm_gal, degree, wav_mix, wav_max, fit='blue', mdegree=2, moments=2)
+    ppxf_kinematics(file, fwhm_gal, degree, wav_mix, wav_max, fit='all', mdegree=1, moments=2)
