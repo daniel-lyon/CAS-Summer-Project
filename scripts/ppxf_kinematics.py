@@ -77,6 +77,7 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
     vel = c*np.log(1 + redshift)   # eq.(8) of Cappellari (2017, MNRAS)
     start = [vel, 200.]  # (km/s), starting guess for [V, sigma]
     t = clock()
+    plt.figure(figsize=(12, 5))
 
     pp = ppxf(sps.templates, galaxy, noise, velscale, start,
         goodpixels=goodPixels, plot=True, 
@@ -113,21 +114,17 @@ def ppxf_kinematics(file, fwhm_gal, degree=4, wav_min=0, wav_max=-1, fit='defaul
 
 if __name__ == '__main__':
 
-    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/Sextans_A_GC1/obj1/mean_NCS.fits'
+    file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/NGC_247/GCs/obj1/mean_NCS.fits'
     fwhm_gal = 4550 / 1800
     # fwhm_gal = 5080 / 9000
     # fwhm_gal = 5070 / 9000
     # fwhm_gal = 4550 / 900
     # fwhm_gal = 4925 / 4000
 
-    # Blue
-    # wav_mix = 0
-    # wav_max = 900
+    # Maximum and minimum wavelength to be used in the pPXF fit (not in Angstroms, but in length of array)
+    wav_mix = 0
+    wav_max = 1700
 
-    # Red
-    wav_mix = 900
-    wav_max = -1
-
-    degree = 1 # legendre polynomial degree
+    degree = 6 # legendre polynomial degree
     # ppxf_kinematics(file, fwhm_gal, degree, wavcut, moments=2, mdegree=6, fit='all')
-    ppxf_kinematics(file, fwhm_gal, degree, wav_mix, wav_max, fit='all', mdegree=1, moments=2)
+    ppxf_kinematics(file, fwhm_gal, degree, wav_mix, wav_max, fit='default', mdegree=6, moments=2)
