@@ -10,25 +10,25 @@ import ppxf as ppxf
 import ppxf.ppxf_util as util
 
 model_dir = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/MILES_BASTI_KU_baseFe/'
-fittable_file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/NGC_247/GCs/obj1/mean_NCS.fits'
+fittable_file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/M31_B336/obj1/mean_NCS.fits'
 np_array_out = dirname(fittable_file) + '/' + "full_results.npy"
 
 region = "all" # define a region to fit (default/all/no_mgb/blue/red/before_mgb/lt5100)
 
 #### FOR DF9 L_BL_4550 (out of focus)
-zi = 0.000278 #redshift guess
-FWHM_data =  4550 / 1800 # data resolution
-start0=83 ;  start1=83
-mask_l=3600; mask_h=5500 # wavelength masks to apply at either end
+zi = -0.001983 #redshift guess
+FWHM_data =  5070 / 9000 # data resolution
+start0=-595 ;  start1=7
+mask_l=4800; mask_h=5300 # wavelength masks to apply at either end
 
-n_balmer = 3  ;  n_forbidden = 3   # need to know
+n_balmer = 1  ;  n_forbidden = 1   # need to know
 masks = np.array([4070, 4150, 4470, 4655]) # not sure either
 
 # loop over the polynomials
 degree_min = 0 # additive legendre polynomial to fit
-degree_max = 3
+degree_max = 15
 mdegree_min = 0 # multiplicative legendre polynomial to fit
-mdegree_max = 3
+mdegree_max = 15
 
 ########################################################################################################################
 

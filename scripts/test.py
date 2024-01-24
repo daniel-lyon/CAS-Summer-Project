@@ -1,10 +1,6 @@
-import pandas as pd
+import numpy as np
 
-# Load the TSV file
-df = pd.read_csv('params.tsv', delimiter='\t')
-
-# Get the second column
-second_column = df.iloc[:, 1]
-
-# Print the second column
-print(second_column)
+a = [[1,2,3,np.nan,5,6],
+     [1,2,3,4,5,np.nan]]
+nan_mask = np.isnan(a)
+b = np.array(a)[~nan_mask]

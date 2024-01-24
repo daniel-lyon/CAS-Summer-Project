@@ -16,7 +16,7 @@ def fit_and_save_results_parallel(params):
     pp = ppxf.ppxf.ppxf(templates, galaxy, noise, VelScale, start, goodpixels=goodPixels,
                         plot=False, moments=moments, degree=np.int(deg_k), mdegree=np.int(deg_p), vsyst=dv, lam=wave,
                         clean=False, regul=False, reg_dim=reg_dim, component=component,
-                        gas_component=gas_component, gas_names=gas_names, quiet=True)  # ,velscale_ratio=velscale_ratio)
+                        gas_component=gas_component, gas_names=gas_names)  # ,velscale_ratio=velscale_ratio)
 
     noise1 = noise * np.sqrt(pp.chi2)
 
@@ -24,7 +24,7 @@ def fit_and_save_results_parallel(params):
     pp1 = ppxf.ppxf.ppxf(templates, galaxy, noise1, VelScale, [pp.sol[0], pp.sol[1]], fixed=fixed, goodpixels=goodPixels,
                          plot=True, moments=moments, degree=np.int(deg_k), mdegree=np.int(deg_p), vsyst=dv, lam=wave,
                          clean=True, regul=1. / 0.1, reg_dim=reg_dim, component=component,
-                         gas_component=gas_component, gas_names=gas_names, quiet=True)
+                         gas_component=gas_component, gas_names=gas_names)
     # plt.show()
     weights = pp1.weights[~gas_component]
     weights = weights.reshape(reg_dim) / weights.sum()
@@ -64,7 +64,6 @@ if __name__ == "__main__":
     mask_l=4800; mask_h=5300 # wavelength masks to apply at either end
 
     n_balmer = 1  ;  n_forbidden = 1   # need to know
-    masks = np.array([4070, 4150, 4470, 4655]) # not sure either
 
     # loop over the polynomials
     degree_min = 0 # additive legendre polynomial to fit
