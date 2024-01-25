@@ -13,14 +13,19 @@ This repository contains code and results for the 2023/24 CAS Summer Project "Un
 All code required to analyse the data is located in `/scripts/`.
 
 `cube_clean_n_stack.ipynb` for cleaning cubes and stacking spectra.
+
 `ppxf_fit.ipynb` for checking recessional velocities.
-`Redshift_Spectra_Display.ipynb` for visualising spectra
-`mp_stellar_pops.py` for running 256 parameter inputs to get age & metallicity
+
+`Redshift_Spectra_Display.ipynb` for visualising spectra.
+
+`mp_stellar_pops.py` for running 256 parameter inputs to get age & metallicity.
+
 `fitting_results_ppxf_explore.py` to visualse 256 parameter results.
 
 Other files include some helper scripts and plotting scripts for paper
 
 `agn_plot_fit.py` for the AGN & galaxy spectra
+
 `spec_plot_fit.py` for the other candidates
 
 ## Velocity Fits
