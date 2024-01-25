@@ -51,19 +51,19 @@ if __name__ == "__main__":
     filterwarnings(category=RuntimeWarning, action="ignore")
     filterwarnings(category=np.VisibleDeprecationWarning, action="ignore")
 
-    model_dir = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/MILES_BASTI_KU_baseFe/'
+    model_dir = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/source_data/MILES_BASTI_KU_baseFe/'
     fittable_file = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_GC/M31_B336/obj1/mean_NCS.fits'
-    np_array_out = dirname(fittable_file) + '/' + "full_results.npy"
+    np_array_out = dirname(fittable_file) + '/' + "full_results3.npy"
 
     region = "all" # define a region to fit (default/all/no_mgb/blue/red/before_mgb/lt5100)
 
     #### FOR DF9 L_BL_4550 (out of focus)
     zi = -0.001983 #redshift guess
-    FWHM_data =  5070 / 9000 # data resolution
+    FWHM_data = 5070 / 9000 # data resolution
     start0=-595 ;  start1=7
-    mask_l=4800; mask_h=5300 # wavelength masks to apply at either end
+    mask_l=4900; mask_h=5300 # wavelength masks to apply at either end
 
-    n_balmer = 1  ;  n_forbidden = 1   # need to know
+    n_balmer = 0  ;  n_forbidden = 1   # need to know
 
     # loop over the polynomials
     degree_min = 0 # additive legendre polynomial to fit
