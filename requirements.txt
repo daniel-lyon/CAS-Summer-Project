@@ -2,3 +2,4 @@ matplotlib==3.5.3
 numpy==1.21.5
 astropy==4.3.1
 ppxf==6.7.15
+corner==2.2.1

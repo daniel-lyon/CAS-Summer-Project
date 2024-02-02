@@ -3,12 +3,19 @@
 # November 2022
 # Works on ubuntu 22.04lts
 
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import corner
 
 """ Very good """
-nucleus_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_SP/NGC247 GCs GC1.npy'
+parent = os.getcwd()
+# nucleus_loc = parent + '/test/GC1_all.npy'
+# nucleus_loc = parent + '/test/GC1_default_lit_inputs.npy'
+# nucleus_loc = parent + '/test/DDO190.npy'
+# nucleus_loc = parent + '/test/M31_B336.npy'
+# nucleus_loc = parent + '/test/F8D1.npy'
+# nucleus_loc = parent + '/results_SP/NGC247 GCs GC1.npy'
 # nucleus_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_SP/NGC247 GCs GC2.npy'
 # nucleus_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_SP/NGC247 GCs GC3.npy'
 # nucleus_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_SP/NGC247 GCs2 GC1.npy'
@@ -19,9 +26,19 @@ nucleus_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_S
 # nucleus_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_SP/Sextans_A_GC1.npy'
 
 """ Questionable """
-# nucleus_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_SP/DDO190.npy'
-# nucleus_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_SP/F8D1.npy'
-# nucleus_loc = '/home/daniel/Documents/Swinburne/ultra-diffuse-galaxies/results_SP/M31_B336.npy'
+# nucleus_loc = parent + '/test/M31_B336_fit_inputs.npy'
+# nucleus_loc = parent + '/test/M31_B336_fit_inputs_no_restframe.npy'
+# nucleus_loc = parent + '/test/M31_B336_LIT_inputs.npy'
+# nucleus_loc = parent + '/results_SP/DDO190.npy'
+# nucleus_loc = parent + '/results_SP/F8D1.npy'
+# nucleus_loc = parent + '/results_SP/M31_B336.npy'
+
+# nucleus_loc = parent + '/test/GC1_fit_inputs_no_restframe_default.npy'
+# nucleus_loc = parent + '/test/GC2_fit_inputs_no_restframe_all.npy'
+# nucleus_loc = parent + '/test/GC3_fit_inputs_no_restframe_default.npy'
+# nucleus_loc = parent + '/test/GC4_fit_inputs_no_restframe_all.npy'
+# nucleus_loc = parent + '/test/GC5_fit_inputs_no_restframe_all.npy'
+nucleus_loc = parent + '/test/GC6_fit_inputs_no_restframe_all.npy'
 
 exclude_nans = False # When true excludes all failed nan values from the data
 
