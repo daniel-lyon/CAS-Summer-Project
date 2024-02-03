@@ -17,15 +17,15 @@ warnings.filterwarnings(category=np.VisibleDeprecationWarning, action="ignore")
 
 parent = os.getcwd()
 model_dir = parent + '/MILES_BASTI_KU_baseFe/'
-fittable_file = parent + '/results_GC/DDO190/obj1/mean_NCS.fits'
-np_array_out = parent + '/test/DDO190_fit_inputs_no_restframe_all.npy'
+fittable_file = parent + '/results_GC/Sextans_A_GC1/obj1/mean_NCS.fits'
+np_array_out = parent + '/test/Sextans_fit_inputs_no_restframe_all.npy'
 
 region = "all" # define a region to fit (default/all/no_mgb/blue/red/before_mgb/lt5100)
 
 #### FOR DF9 L_BL_4550 (out of focus)
-FWHM_data = 5080 / 9000 # data resolution
-start0=160 ;  start1=7
-mask_l=4830; mask_h=5300 # wavelength masks to apply at either end
+FWHM_data = 4925 / 4000 # data resolution
+start0=296 ;  start1=0
+mask_l=4497; mask_h=5356 # wavelength masks to apply at either end
 
 n_balmer = 1  ;  n_forbidden = 1   # need to know
 
@@ -164,7 +164,7 @@ if __name__ == "__main__":
         for j, deg_p in enumerate(mdegree):
             all_params.append([i, deg_k, j, deg_p])
 
-    with Pool(processes=10) as pool:
+    with Pool() as pool:
         # results = pool.map(fit_and_save_results_parallel, all_params)
         jobs = [pool.apply_async(fit_and_save_results_parallel, [param]) for param in all_params]
         results = [result.get() for result in jobs]

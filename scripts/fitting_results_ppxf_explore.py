@@ -38,7 +38,14 @@ parent = os.getcwd()
 # nucleus_loc = parent + '/test/GC3_fit_inputs_no_restframe_default.npy'
 # nucleus_loc = parent + '/test/GC4_fit_inputs_no_restframe_all.npy'
 # nucleus_loc = parent + '/test/GC5_fit_inputs_no_restframe_all.npy'
-nucleus_loc = parent + '/test/GC6_fit_inputs_no_restframe_all.npy'
+# nucleus_loc = parent + '/test/GC6_fit_inputs_no_restframe_all.npy'
+# nucleus_loc = parent + '/test/DDO190_fit_inputs_no_restframe_all.npy'
+# nucleus_loc = parent + '/test/F8D1_fit_inputs_no_restframe_all.npy'
+# nucleus_loc = parent + '/test/F8D1_fit_inputs_no_restframe_all_short.npy'
+# nucleus_loc = parent + '/test/F8D1_fit_inputs_no_restframe_all_pandas.npy'
+# nucleus_loc = parent + '/test/M31_H12_fit_inputs_no_restframe_all.npy'
+# nucleus_loc = parent + '/test/M31_PANDAS_fit_inputs_no_restframe_all.npy'
+nucleus_loc = parent + '/test/Sextans_fit_inputs_no_restframe_all.npy'
 
 exclude_nans = False # When true excludes all failed nan values from the data
 
