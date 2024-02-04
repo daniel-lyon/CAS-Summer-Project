@@ -36,7 +36,7 @@ parent = os.getcwd()
 # nucleus_loc = parent + '/test/F8D1_fit_inputs_no_restframe_all_pandas.npy'
 
 """ New """
-# nucleus_loc = parent + '/results_SP/GC1_fit_inputs_no_restframe_default.npy'
+nucleus_loc = parent + '/results_SP/GC1_fit_inputs_no_restframe_default.npy'
 # nucleus_loc = parent + '/results_SP/GC2_fit_inputs_no_restframe_all.npy'
 # nucleus_loc = parent + '/results_SP/GC3_fit_inputs_no_restframe_default.npy'
 # nucleus_loc = parent + '/results_SP/GC4_fit_inputs_no_restframe_all.npy'
@@ -47,7 +47,7 @@ parent = os.getcwd()
 # nucleus_loc = parent + '/results_SP/M31_B336_fit_inputs_no_restframe.npy'
 # nucleus_loc = parent + '/results_SP/M31_H12_fit_inputs_no_restframe_all.npy'
 # nucleus_loc = parent + '/results_SP/M31_PANDAS_fit_inputs_no_restframe_all.npy'
-nucleus_loc = parent + '/results_SP/Sextans_fit_inputs_no_restframe_all.npy'
+# nucleus_loc = parent + '/results_SP/Sextans_fit_inputs_no_restframe_all.npy'
 
 
 
