@@ -7,28 +7,28 @@ parent = os.getcwd()
 
 
 """ NGC 247"""
-file_path1 = parent + "/results_GC/NGC_247/GCs/obj1/spec.txt"
-file_path2 = parent + "/results_GC/NGC_247/GCs/obj2/spec.txt"
-file_path3 = parent + "/results_GC/NGC_247/GCs/obj3/spec.txt"
-file_path4 = parent + "/results_GC/NGC_247/GCs2/obj1/spec.txt"
-file_path5 = parent + "/results_GC/NGC_247/GCs2/obj2/spec.txt"
-file_path6 = parent + "/results_GC/NGC_247/GCs2/obj3/spec.txt"
+# file_path1 = parent + "/results_GC/NGC_247/GCs/obj1/spec.txt"
+# file_path2 = parent + "/results_GC/NGC_247/GCs/obj2/spec.txt"
+# file_path3 = parent + "/results_GC/NGC_247/GCs/obj3/spec.txt"
+# file_path4 = parent + "/results_GC/NGC_247/GCs2/obj1/spec.txt"
+# file_path5 = parent + "/results_GC/NGC_247/GCs2/obj2/spec.txt"
+# file_path6 = parent + "/results_GC/NGC_247/GCs2/obj3/spec.txt"
 
-files = [file_path1, file_path2, file_path3, file_path4, file_path5, file_path6]
-names = ["GC1", "GC2", "GC3", "GC4", "GC5", "GC6"]
-redshifts = [0.000278, 0.0001811, 0.000137, 0.000256, 0.000286, 0.000305]
+# files = [file_path1, file_path2, file_path3, file_path4, file_path5, file_path6]
+# names = ["GC1", "GC2", "GC3", "GC4", "GC5", "GC6"]
+# redshifts = [0.000278, 0.0001811, 0.000137, 0.000256, 0.000286, 0.000305]
 
 
 """ Other candidates """
-# file_path1 = parent + "/results_GC/DDO190/obj1/spec.txt"
-# file_path2 = parent + "/results_GC/F8D1/obj1/spec.txt"
-# file_path3 = parent + "/results_GC/M31_B336/obj1/spec.txt"
-# file_path4 = parent + "/results_GC/M31_H12/obj1/spec.txt"
-# file_path5 = parent + "/results_GC/M31_PANDAS_41/obj1/spec.txt"
-# file_path6 = parent + "/results_GC/Sextans_A_GC1/obj1/spec.txt"
-# files = [file_path1, file_path2, file_path3, file_path4, file_path5, file_path6]
-# names = ["DDO190", "F8D1", "M31 B336", "M31 H12", "M31 Pa-41", "SextansA"]
-# redshifts = [0.000535, -0.000359, -0.0019824, -0.001262, -0.000351, 0.0009887]
+file_path1 = parent + "/results_GC/DDO190/obj1/spec.txt"
+file_path2 = parent + "/results_GC/F8D1/obj1/spec.txt"
+file_path3 = parent + "/results_GC/M31_B336/obj1/spec.txt"
+file_path4 = parent + "/results_GC/M31_H12/obj1/spec.txt"
+file_path5 = parent + "/results_GC/M31_PANDAS_41/obj1/spec.txt"
+file_path6 = parent + "/results_GC/Sextans_A_GC1/obj1/spec.txt"
+files = [file_path1, file_path2, file_path3, file_path4, file_path5, file_path6]
+names = ["DDO190", "F8D1", "M31 B336", "M31 H12", "M31 PA-41", "SextansA"]
+redshifts = [0.000535, -0.000359, -0.0019824, -0.001262, -0.000351, 0.0009887]
 
 n_files = len(files)
 fig, axes = plt.subplots(n_files, 1, figsize=(7, 5*n_files), sharex=True)
