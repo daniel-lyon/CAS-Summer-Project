@@ -38,7 +38,7 @@ Stellar population fits run with `mp_stellar_pops.py` are located in `/results_S
 `/images/` contains images of the candidates. Most are from HST: GC1-6, DDO190, F8D1, PA-41, & B336. H12 image is from the SDSS DR14 Finding Chart. 5P, 10P, IKN, & Sextans are from Legacy Sky Survey DR9.
 
 ## Cite
-if you used this data in your paper, please be sure to cite us: "citation when published"
+if you used this data in your paper, please be sure to cite us with your favourite reference manager from [NASA ADS](https://ui.adsabs.harvard.edu/abs/2024PASA...41...44F/abstract) or as "Forbes, D. A., Lyon, D., Gannon, J., Romanowsky, A. J., & Brodie, J. P. 2024, Publications of the Astronomical Society of Australia, 41, e044, doi: 10.1017/pasa.2024.41"
 
 ## Contact
 If would like to contact me, feel free to email anytime: `daniellyon31@gmail.com`
